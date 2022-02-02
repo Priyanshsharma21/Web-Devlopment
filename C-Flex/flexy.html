@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Challange 1</title>
+    <style>
+
+                 /* main flex   */
+
+        body{
+            background-color: indigo;
+        }
+        .container-1, .container-2 ,.container-3{
+            display: flex;
+            flex-direction: row;
+        }
+
+    
+        .box1{
+            width: 100%;
+            height: 180px;
+            background-color: coral;
+            border: 2px solid rgb(160, 142, 142);
+            border-radius: 7px;
+            margin: 3px;
+            color: cornsilk;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            font-size: large;
+        }
+
+
+        .box2{
+            width: 100%;
+            height: 47px;
+            background-color: coral;
+            border: 2px solid rgb(187, 142, 142);
+            border-radius: 7px;
+            margin: 3px;
+            color: cornsilk;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+        }
+
+       
+
+        .box3{
+            width: 100%;
+            height: 47px;
+           background-color: coral;
+           border: 2px solid rgb(168, 139, 139);
+            border-radius: 7px;
+           margin: 3px;
+          color: cornsilk;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: large;
+
+        }
+
+                   /* sub flex  */
+
+        .container-11, .container-22 ,.container-33{
+            display: flex;
+            flex-direction: row;
+        }
+
+       
+
+        .box11{
+            width: 100%;
+            height: 73px;
+            background-color: rgb(251, 255, 0);
+            border: 2px solid rgb(183, 0, 255);
+            border-radius: 7px;
+            margin: 3px;
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            font-size: large;
+        }
+
+
+        .box22{
+            width: 100%;
+            height: 27px;
+            background-color: rgb(251, 255, 0);
+
+            border: 2px solid rgb(212, 0, 255);
+            border-radius: 7px;
+            margin: 3px;
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+        }
+
+       
+
+        .box33{
+            width: 100%;
+            height: 27px;
+            background-color: rgb(251, 255, 0);
+
+           border: 2px solid rgb(234, 0, 255);
+            border-radius: 7px;
+           margin: 3px;
+          color: rgb(0, 0, 0);
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: large;
+
+        }
+
+    
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-1">
+        <div class="box1" id="box-1">1
+
+
+            <div class="container-11">
+                <div class="box11" id="box-1">1
+                </div>
+                <div class="box11" id="box-2">2</div>
+                <div class="box11" id="box-3">3</div>
+            </div>
+        
+                <div class="container-22">
+              <div class="box22" id="box-4">1</div>
+                <div class="box22" id="box-5">2</div>
+                <div class="box22" id="box-6">3</div>
+                <div class="box22" id="box-7">4</div>
+                </div>
+        
+        
+                <div class="container-33">
+                    <div class="box33" id="box-8">1</div>
+                    <div class="box33" id="box-9">2</div>
+                    <div class="box33" id="box-10">3</div>
+                    <div class="box33" id="box-11">4</div>
+                    <div class="box33" id="box-12">5</div>
+                </div>
+
+
+
+
+        </div>
+        <div class="box1" id="box-2">2</div>
+        <div class="box1" id="box-3">3</div>
+    </div>
+
+        <div class="container-2">
+      <div class="box2" id="box-4">1</div>
+        <div class="box2" id="box-5">2</div>
+        <div class="box2" id="box-6">3</div>
+        <div class="box2" id="box-7">4</div>
+        </div>
+
+
+        <div class="container-3">
+            <div class="box3" id="box-8">1</div>
+            <div class="box3" id="box-9">2</div>
+            <div class="box3" id="box-10">3</div>
+            <div class="box3" id="box-11">4</div>
+            <div class="box3" id="box-12">5</div>
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid challange 2</title>
+    <style>
+        body
+        {
+            background: linear-gradient(to top, #1900ffd3, #00ffff);
+
+        }
+        *{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 0);
+            /* text-shadow: 1px 2px 4px rgb(0, 38, 255); */
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-gap: 10px;
+        }
+
+        div.item{
+            background-color: wheat;
+            border: 2px solid gray;
+            padding: 10px;
+        }
+
+        div.nested-item{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 75px 500px 75px;
+            grid-gap: 10px;
+        }
+
+        div.main-section{
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-gap: 10px;
+        }
+
+        .nested-item,.container div:hover{
+            transition: all 2s ease-in-out 2ms;
+            background: linear-gradient(to top, #00ff15d3, #ff9900);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="nav">
+            navbar
+        </div>
+        <div class="nested-item">
+           <div class="item" id="header">header</div>
+           <div class="main-section">
+              <div class="item" id="article">article</div>
+              <div class="item" id="ads">ads</div>
+           </div>
+          <div class="item" id="footer">footer</div>
+
+        </div>
+
+    </div>
+</body>
+</html>

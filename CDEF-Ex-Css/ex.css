@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(255, 0, 64);
+}
+
+
+
+
+/* absolute */
+/* div h1{
+    border: 2px solid red;
+    background-color: hotpink;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 10px;
+    position: absolute;
+    top: 222px;
+}
+
+span h1{
+    border: 2px solid greenyellow;
+    background-color: rgb(0, 247, 255);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 10px;
+    position: absolute;
+    right: 600px;
+
+    
+} */
+/* relative */
+/* 
+div h1{
+    border: 2px solid red;
+    background-color: hotpink;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 10px;
+    position: relative;
+    top: 30px;
+
+}
+
+span h1{
+    border: 2px solid greenyellow;
+    background-color: rgb(0, 247, 255);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 10px;
+    position: relative;
+    /* right: 600px; */
+    /* bottom: 29px; */
+    /* left: 205px; */
+
+*/
+
+
+
+div h1{
+    border: 2px solid red;
+    background-color: hotpink;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 10px;
+    position: fixed;
+    /* top: 30px; */
+
+}
+span h1{
+    border: 2px solid greenyellow;
+    background-color: rgb(0, 247, 255);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 10px;
+    position: fixed;
+    overflow: hidden;
+    /* right: 600px;
+    bottom: 29px;
+    left: 205px; */
+
+}
+
+div{
+    background-color: chartreuse;
+    width: 300px;
+    height: 280px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto 10px auto;
+    border: 4px solid black;
+}
+
+.content-box{
+    box-sizing: content-box;
+}
+
+/* width : width + (2*padding) + (2*border)
+height : height + (2*padding) + (2*border)*/
+
+.border-box{
+    box-sizing: border-box;
+}
+
+/* width : width -(2*padding) - (2*border) 
+height : height - (2*padding) - (2*border)*/
+
+
+
+@media (min) {
+    
+}

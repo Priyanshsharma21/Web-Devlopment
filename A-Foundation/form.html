@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Forms</title>
+</head>
+<body>
+    
+        
+    
+    <div class="container">
+        <form  action="mailto:piyuindia4@gmail.com" method="post" enctype="text/plain" class="form-style"> 
+           
+            <h1 class="heading">
+                Fill This Form
+            </h1>
+           
+            <div>
+                <label for="name">Name*</label>
+                 <input class="pop" type="text" , id="name" required placeholder="ENTER YOUR NAME">
+            </div>
+    <br>
+            <div>
+                <label for="age">Age</label>
+                <input class="pop" type="number" name="Age of person" id="age" placeholder="ENTER YOUR AGE">
+    
+            </div>
+    <br>
+            <div>
+                <label for="email">Email Adress</label>
+    
+                <input class="pop" type="email" name="" id="email" placeholder="piyuindia4@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="date">Date</label>
+                <input class="pop" type="date" name="" id="date">
+            </div>
+            <br>
+            <div>
+                <label for="eligible">Are You Elligable</label>
+                <input class="dibba-pop" type="checkbox" name="" id="eligible">
+            </div>
+            <br>
+            <fieldset>
+                <legend>Color</legend>
+                <span>
+                    <input class="pop" type="color" name="color" id="color">
+                    <p><Strong >Select your favourait color</Strong></p>
+                </span>
+            </fieldset>
+    <fieldset>
+        <legend>Gender</legend>
+            <div> 
+               Gender: Male <input class="pop" type="radio" name="gender" id="male"> 
+               Female <input class="pop" type="radio" name="gender" id="female">
+               Other <input class="pop" type="radio" name="gender">
+               Not Willing to say <input class="pop" type="radio" name="gender">
+            </div>
+        </fieldset>
+            <div>
+                <label for="textarea"></label><br>
+    
+                Describe in words : <br>
+                <textarea class="pop" name="TextArea" id="textarea" cols="30" rows="10"></textarea placeholder="I am a Web Devloper">
+            </div>
+            <br>
+            <div>
+                <label for="file">Uplode File:</label>
+                <input class="pop" type="file">
+            </div>
+            <br>
+    
+            <div>
+                <label for="car">Select car</label>
+                <select class="pop" name="Car" id="car">
+                    <option value="Bmw">BMW</option>
+                    <option value="farari">Farari</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <input class="pop" type="range" name="" id="range">
+            </div>
+    <hr>
+    <hr><br>
+    <fieldset>
+        <legend>Enter Your password</legend>
+        <div>
+            <label for="Password">Password:</label>
+            <input class="pop" type="password" id="Password">
+        </div>
+    </fieldset>
+    <hr>
+            <div>
+                <!-- buttone are of three type submit and reset and image -->
+                <!-- <label for="reset">Reset:</label> -->
+                <input  class="btns" type="submit" name="Reset" id="reset">
+                <!-- <label for="Submit">Submit:</label> -->
+                <input  class="btnr" type="Reset" name="" id="Submit">
+    
+                <input class="btni" type="image" name="" id="img">
+            </div>
+    
+        </form>
+    </div>
+         
+ <hr>
+</body>
+</html>

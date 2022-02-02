@@ -1,0 +1,93 @@
+1. Api are like a documentation between devloper and Provider.
+
+2. API are set of commands, function, protocols, Object that devloper.
+use to create software and intrect with external system.
+
+3.Like Googlemap api, crime api all have there data that we can use and include in our 
+website so we will not have to downlode it again.
+
+4. Every API has 4 things:-
+Endpoint, Path, Parameters,Authentication
+
+Endpoint - The url to access there data 
+
+path - url/path that the website already have specified
+Example- url/Programming,Movies(We seprate path by commas,)
+
+parameter - url/path/parameter(?key=value & contain=deebuging)
+Example- url/Programming/?type=single&contain=Debugging ,
+same catogries seprate by commas like (?blacklistFlag=religious,explicit).
+space represent by %20
+
+
+
+5. Weather API :-
+After creating account go to api keys and you can create one or just use 
+
+d722b40b26d2c0362635ce360e47d516
+
+ex-> There are lot of way one of which is get weather by city name
+
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+|------------Endpoint-----------------||-parameter--||---------Our Key---------|
+
+here q = by name of city 
+we can get it by zip code or lan-lat
+
+For this purpose of checking API we use Postman 
+Using Postman we can get url very easily
+just paste endpoint 
+then in key section type key and in value type value
+you will get your data 
+the data we get is in much more structured format
+because of Json format 
+
+6. We have different types of formats 
+Xml
+Html
+Json
+JavaScript Object Notation Format 
+
+Company:[{
+    name:Google
+    eid - 765474
+}] 
+
+7. The Process
+
+So whatever data client browser want they request (get req) to our server our server give response in form of HTML,CSS,JS. 
+If we want data from other external server we request (get req) to external server Using API (Path and parameter) and get responce as data from them.
+Our server give that data to client browser in friendly form (HTML,CSS,JS).
+
+
+            get(req)                   get(req)
+client  --------------> Our Server --------------> External Server(Someone Else) 
+browser                    |   |_________________________|
+ |_________________________|             Data 
+       Data(HTML,CSS,JS)        
+
+8. Weather project
+a. Hyper terminal 
+b. Create midir on desktop as weather project
+c. Create touch index.html and app.js
+d. npm init and install express
+
+8. While Using https there are different https codes like 
+100's - Informationsl responses 
+200's - OK
+300's - Redirection messages
+400's - Errors and themost common ones is 404 not found means the data you wanna fetch throught api not found 
+
+9. JSON.parse is used to make string type object 
+ex -> {name:priynsh,class:t-3,subject:CSE}
+it convert it to JSON object format 
+{
+    name:priyansh,
+    class:t-3,
+    subject:cse
+}
+
+and JSON.stringify go opposite
+
+
+10. For any type of api we need an api key first then use http to get and post req

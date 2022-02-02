@@ -1,0 +1,290 @@
+
+
+/* title style  */
+
+
+#title{
+    background-color: rgb(255, 162, 0);
+    color: white;
+    text-align: left;
+   
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .container-fluid h1 {
+    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 5rem;
+  line-height: 1.5;
+  font-weight:bolder;
+  }
+  
+  .container-fluid{
+    padding: 0% 15%;
+  }
+  
+  /* navbar */
+  
+  .navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+  
+  .navbar{
+    padding-bottom: 0 0 2.5rem;
+    text-decoration: none;
+  }
+  
+  .nav-item{
+    font-size: 5.5rem;
+    padding: 0px 18px;
+  }
+  
+ .collapse{
+  padding-left: 74px;
+
+ }
+  
+  .nav-link{
+    font-family: 'Montserrat-light';
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Montserrat';
+  }
+
+  .nav-link:hover{
+    color: rgb(194, 250, 250);
+    text-decoration: none;
+  }
+  
+  .downlode-btn{
+    margin: 7% 3% 5% 0%;
+  }
+  
+  .title-img{
+    padding-left: 10px;
+    width: 50%;
+    transform: rotate(25deg);
+    margin-left: 5px;
+    z-index: 1;
+  }
+  .fa-apple:before {
+      content: "\f179";
+      padding-right: 3px;
+  }
+  
+  /* features  */
+  #features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    bottom: 7px;
+  }
+  .fc{
+  margin: 10px;
+  text-align: center;
+  }
+  
+  .fc h3{
+    font-size: 2rem;
+    font-family: 'motserrat-bold';
+    padding-bottom: 5px;
+  }
+  
+  .fc p{
+    font-family: 'Montserrat';
+    color: gray;
+  }
+  .ikbi{
+    padding: 26px;
+  }
+  
+  .icon{
+    color: red;
+    padding-bottom: 7px;
+  }
+  .icon:hover{
+    color: rgb(243, 107, 107);
+  }
+  /* testimonial */
+
+  h2{
+      font-family:'Montserrat';
+      font-size: 3rem;
+      line-height: 1.5;
+      font-weight: bolder;
+  }
+
+  #testimonials{
+      background-color: rgb(255, 166, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+
+    
+  }
+
+  .test-img{
+    border-radius: 100%;
+    width: 20%;
+    margin: 20px;
+
+
+  }
+
+  #press{
+    background-color: rgb(255, 166, 0);
+text-align: center;
+padding-bottom: 3%;
+
+  }
+
+  .press-logo{
+      width: 15%;
+      margin: 20px 19px 20px;
+  }
+
+  .carousel-item{
+    padding: 7% 15%;
+
+  }
+
+  /* pricing */
+
+
+  #pricing{
+    padding: 100px;
+  }
+
+  /* footer  */
+  #footer {
+    padding: 40px 0 30px;
+    border-top: 1px solid #666;
+    background: #1e1e1e;
+    padding: 9% 17%;
+}
+.copyright-text p {
+    color: #ccc;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.social-link li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.social-link li a {
+    color: #ccc;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.social-link li a:hover{
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 217, 0);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  transition: .5s;
+}
+
+.is{
+  padding-left: 5px;
+}
+/* call to action */
+
+
+
+#cta{
+  background-color: orange;
+  padding: 7% 13%;
+  text-align: center;
+}
+
+.cta-head{
+  font-family:'Montserrat';
+  font-size: 5rem;
+  line-height: 1.5;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+  .navbar{
+    padding-left: 66px;
+   padding-top: 12px;
+  }
+  .m-css{
+    text-align: center;
+  }
+  .row .title-img{
+    padding-left: 10px;
+
+  }
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .container>.navbar-header, .container>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 98px;
+}
+.navbar-toggler{
+  overflow: hidden;
+}
+.navbar-brand{
+  padding-right: 10px;
+}
+.navbar-collapse.collapse {
+  display: block!important;
+  height: auto!important;
+  padding-bottom: 0;
+  overflow: visible!important;
+  padding-left: 6px;
+}
+ }
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .collapse{
+    padding-left: 10px;
+  }
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+ }

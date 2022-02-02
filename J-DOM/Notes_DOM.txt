@@ -1,0 +1,464 @@
+1. ------> JS in website 
+We can include js in out html by 3 ways internal external inline js 
+Best practice is external 
+
+
+
+
+
+
+
+
+
+
+
+2------> DOM (Document object model)
+DOM - Document Object Model 
+It turns out HTML code into a tree like structure 
+1. Whenever we make website , structure - HTML (Document).
+2. we style it (Document).
+3. JS add functionality to our document 
+
+Document - HTML 
+OBJECT - HTML Elements (h1,div,p).
+Model - this whole model
+
+                        document 
+                         HTML ---------> root tag
+                head              body --------> child tag of root
+                title             h1 -----------> child tag of body
+                                  p -----------> child tag of body
+
+using this DOM js can manupulate the HTML and add functionality to it
+
+So now we kjnow that elements inside HTML are our objects using 
+
+'document.firstelementchild.lastelementchild' -- > we can select child inside document 
+by 
+document.queryselector('we can select objects').onClick; ---> methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 ----->
+
+objectds inside DOM has 
+ State - properties ---> describe about object 
+ Behaviour - methods -----> What object can do
+ 
+ car
+
+property - color,no of seats, nio of doors
+
+methds - break(); , drive();
+
+
+
+
+
+
+
+
+
+
+
+
+
+3 -----> Dot notation
+
+we can manupulate js by . notation
+1. property ---> innerHTML , color , firstChild.
+car.color = 'red';// setters
+car.color; // geeters
+
+2. Method ----> onClick() , appendChild() , setAttribute();
+car.drive(); // car start drive means method tells object to do something
+
+
+3. -----> select element (html)
+ -----------------array element------------
+ getElementByTag and getElementByClass
+ --> document.getelementbyTagName('li') 
+ this always return array of elements , 
+ in this example its array of list so to select particulat use [];
+
+ --> document.getelementbyTagName('li')[2].style.color='red';
+ --> document.getelementbyclassName('btn')[3].style.color='red';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------select non array----------
+
+use -> getElementByID 
+document.getElementByID("nav-bar").style.color="black";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------Quary Selector ----------------
+
+use to select CSS selectors
+
+document.quearySelector("li a").style.color="pink";
+
+note if you want all the e;ement then use
+
+document.quearySelectorAll("li a")[1].style.color="pink"; // now array selecor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       -----------Note-----------
+In Js we declear css properties using camel case -----> .borderRadius="15px";
+In Js we declear Css value in form of string ---------> "15px";
+
+
+Our HTML is for structure
+
+Css is for style 
+
+JS for functionality
+
+but ofter we use js for adding style as we seen.
+
+we can use
+
+document.querySelector("h1").classList; -----> this will return class associate with h1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------method-------------------------
+
+
+document.querySelector("h1").classList.add("head")// new class added
+document.querySelector("h1").classList.remove("head") // remove thw class
+document.querySelector("h1").classList.toggle("head") // toggle the class means if present then remove it, if not present make it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------text manupulation in JS-------------
+we use innerHTML till now but we can ue 
+textContent
+In textContent if your heading contain <em> or <strong> then it will print that too but
+in  innerHtml it will print actual text present in it irrvalent of html
+
+
+
+
+
+
+
+
+
+----------------------Manupulate Attribute------------------
+
+.attribute return attribute in that element whole a tag
+
+document.querySelector("a").attributes;
+
+.getAttribute used to get that attribute -, get value inside that attribute.
+
+document.querySelector("a").getAttribute("href");
+
+.setAttribute is used to set new value of that attribute
+
+take 2 parameter as input one attribute second value to which replace
+
+document.querySelector("a").setAttribute("href","https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12383884#notes");
+
+
+
+
+
+ ------------addEventLisner()-------------
+ It is a method we can use with our object
+ when we want an event to occure when we do something eith out object we use event listner
+
+ document.querySelector("button").addEventListner("onClick",function); // this add event listner to button such that when it chicked function run
+
+
+
+ -------------higher order functions---------------
+
+ functions which takes functions as input are called higher order functions.
+
+ function add(a,b){
+    return a+b;
+}
+
+function multpliy(a,b) {
+    return a*b;
+}
+function divide(a,b){
+    return a/b;
+}
+function subtract(a,b){
+    return a-b;
+}
+
+function calculator(a,b,op) {
+    return op(a,b);
+}
+
+
+calculator(3,5,multpliy);
+
+
+--------------add audio-----------
+here we are just adding new audio element in out HTML and storing it in audio variable <Audio> this audio has different methods like pause, play
+ var audio= new Audio("sounds/tom-1.mp3");
+  audio.play();
+
+  ---------this----------
+  this return particular object we clicked on it return its 
+  in our example we have an enent listener when we cliked on object that will triggerrthe function associate with it and function contain this.html so it return that
+-----------------------------------------------------------------------------
+  var drumClicked = (document.querySelectorAll(".drum")).length;
+
+for(var i=0; i<drumClicked;i++){
+
+    document.querySelectorAll(".drum")[i].addEventListener("click",function(){
+    console.log(this.innerHTML);
+    });
+------------------------------------------------------------------------------
+
+----------object----------------
+
+if we want to store dfferent type of datatype in same container then we can use object
+which have same properties different values
+it is a refance datatype so declearation is dynamically possible
+
+var rakhiKeMummy=
+{
+name: "Butri" ,
+age: 33,
+workEx: 4,
+work: ["jhdu","Pocha","bartan"]
+course : {
+    introduction:10;
+    Intermediate = 21;
+    advance = 19;
+}
+enroll(){
+    console.log("success");
+}
+}
+
+element ACCESS BY (.) operator
+rakhiKeMummy.name // butri 
+rakhiKeMummy.course // whole sub-obj 
+course.enroll() // success 
+course.price = 999 // added 
+
+---------------constructor function--------------
+
+function RakhiKeMummy(name,age,workEx,work){    // capital letter
+    this.name = name;
+    this.age = age;
+    this.workEx = workEx;
+    this.work = work;
+}
+
+------------------------Initilize Object-------------------------
+
+var rakhiKiMummy = new RakhiKeMummy("butri", 33 , 4 , ["jhadu","Pocha","bartan"]);
+
+
+-----------------Method in constructor----------
+function clean(){
+    alert("Karriya hu sir");
+}
+
+
+function RakhiKeMummy(name,age,workEx,work){    // capital letter
+    this.name = name;
+    this.age = age;
+    this.workEx = workEx;
+    this.work = work;
+    this.doIt = function{
+        var call =prompt("Are you sure");
+        if(call=="yes"){
+        clean();
+        }
+        else {
+            alert("Theak sir jaisa aap kahe")
+        }
+    }
+}
+
+
+Then this will work
+New keyword create object - when constructor call happen value passes and stored in referance type from which we can asccess object 
+
+var rakhiKeMummy = new RakhiKeMummy("butri");
+
+
+-----------keydown--------------------
+
+used to add event to keyboard
+
+addeventListner("keydown");
+
+------------callback function-------------
+document.addEventListener("keydown",function(event){ // this event trigger the event happens like keydown or click , this function call by
+     object which experience the event
+    bajao(event.key);
+    });
+
+   
+    callback function dynamically tells us what event happens it give us all the information of it
+        one function will wxwcute after other complete
+
+ note ----> this function will be called only based on condition satisfied means 
+ if our condition is typeOfEvent = "keydown" then only that function call 
+
+ it check from the list of objext that event that occure === typeOfEvent we pass (keydown===keydown) yes then it return 
+
+ function anotherEventListner(typeOfEvent,callback){
+//code being detacting
+
+var eventThatHappen = {
+
+eventType:"keydown",
+key : "p",
+duration : 2
+}
+
+if(eventThatHappen===typeOfEvent){
+    callback(eventThatHappen);
+}
+
+}
+
+anotherEventListner("keydown",function(event){
+   console.log(event); 
+});
+
+
+------------------class -----------------------
+
+it is like a template used to store similar type of object 
+
+class Product{
+    constructor(name,price,discount,code){
+        this.name= name;
+        this.price = price;
+        this.discount = discount;
+        this.code = code;
+    }
+}
+
+
+var phone = new Product("phone",20000,30,"Iphone30");
+phone.name // phone
+
+-------------class expression-----------
+
+var product1 = class Product{
+    constructor(name,price,discount,code){
+        this.name= name;
+        this.price = price;
+        this.discount = discount;
+        this.code = code;
+    }
+}
+
+-----------------geeter and seeter----------
+geeter 
+
+get getDiscount(){
+    return this.discount;
+}
+
+set setDiscount(value){
+    this.discount = value ;
+}
+
+------------method-----------
+discount(){
+    return this.discount * this.price/100;
+}
+getItem(){
+    return this.item "is a product";
+}
+
+-----------------Inheritnce-----------
+
+class Furniture extends Product {
+    constructor(item_name){
+        super(item_name);
+    }
+    getItem(){
+        retun this.item_name"is a furniture";
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box challange 3</title>
+    <style>
+*{
+    font-size: 30px;
+    text-align: center;
+}
+.container{
+    background-color: #1F2833;
+    box-shadow: .4em .4em 2em #45A29E;
+    margin: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #45A29E ;
+    background-color: #1F2833;
+    color: #45A29E;
+    width: 100%;
+}
+.nav{
+    flex-grow: 1;
+    width: 20%;
+    height: 700px;
+    background-color: #1F2833;
+    color: #45A29E;
+}
+.child div{
+    border: 1px solid #45A29E ;
+    width: 100%;
+}
+.header,.footer{
+    flex-grow: .2;
+}
+.article{
+    flex-grow: .6;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="nav">Nav Tab</div>
+            <div class="child">
+                <div class="header">Header</div>
+                <div class="article">Article</div>
+                <div class="footer">Footer</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

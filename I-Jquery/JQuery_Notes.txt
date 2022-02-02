@@ -1,0 +1,226 @@
+1. JQuery is a most popular js library contain pre define functions like we use bootstrap in css 
+predefine classes methods to make our code simple
+
+ex -> 
+
+document.querySelector("h1"); // select h1
+$("h1"); // slect h1 
+
+
+
+
+
+
+
+2. google CDN -- place it just above script of js
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+3. Selecting elements in jquery
+
+$ - document.querySelector,querySelector,selectElementByTag,selectElementByClass,selectElementById
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Style with Jquery 
+
+we use method - css ("Property" , "value");
+Normal- document.querySelector("h1").style.color= "red";
+$("h1").css("backgroundColor","yellow");
+
+Note -> If you have one value then you are get the value and if two parameter you are setting the value
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. Add class 
+Normal- document.querySelector("h1").addClass("head");
+
+jquery - $("h1").addClass("heading margin-50"); // adding multiple classes
+
+
+
+
+
+
+
+
+
+
+6. Manupulate text 
+Normal - document.querySelector("h1").innerHTML = "<em>hello world</em>";
+
+jquery- $("h1").text("Hello World!"); // slect h1 this will replace the text with text b/w " "
+$("h1").html("<em>This will only change the text between</em>"); // slect h1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. Manupulate Attributes
+Normal - document.querySelector("h1").getAttribute("href");
+jquery-$("h1").attr("src") //get attribute 
+
+Normal - document.querySelector("h1").getAttribute("href","http:/google.com");
+jquery-$("h1").attr("src","http:/google.com") // set attribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8. Add event Listner
+
+normal - document.querySelector("h1").addEventListener("click",function(){
+    document.querySelector("h1").style.color = "red"
+})
+
+jquery - $("h1").click(function(){
+    $("h1").css("color","red");
+})
+
+           or 
+
+ $("h1").on("mousehover",function(){
+    $("h1").css("color","red");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+9. Adding element dynamically
+
+1. before after prepend append ->
+
+$("h1").before("<button>click me </button>"); // add before h1 outside
+$("h1").after("<button>click me </button>");  // add after h1 outside
+$("h1").prepend("<button>click me </button>"); // add bafore h1 inside
+$("h1").append("<button>click me </button>"); // add after h1 inside
+
+
+
+
+
+
+
+
+
+
+
+
+10. Remove element 
+
+$("h1").remove();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11. Add animation in elements
+
+
+ $("h1").on("mousehover",function(){
+    $("h1").show(); // .hide() // .toggle() //fadeIn() // fadeOut() // fadeToggle // slideup and down //slideToggle
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12. Animate 
+$("h1").on("mousehover",function(){
+    $("h1").animate({opacity:0.5}) // b/w {} we can only add numaric css
+
+
+
+
+
+
+
+
+
+
+
+
+    
+13. animation chain reaction 
+
+$("h1").on("mousehover",function(){
+    $("h1").slideUp().slideDown().animate({opacity:0.5})
+})

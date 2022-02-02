@@ -1,0 +1,223 @@
+/* note if we wanna change block to inline so we can do it by using display property
+if we want a sapn which is inline we can make it block and if we want para block we can make it inline 
+if we wanna change width of inline which is not possible normally
+we use inline block
+if we wanna disapper element we use visiblity hidden or display none
+
+
+DOM, when we proceed further in html css js an tree like structore been created called DOM
+
+
+units are of two type absolute and relative
+Absolute are absolute dont depend on other like
+cm
+mm
+in
+px 
+pt
+pc
+
+this all are the static size means it will not change according to browser size
+
+100% = 16px = 1em 
+
+we use em so whatever the poarent size is it will inharit it nd take referance from parent size 
+we use rem so the child size is independent to parent
+
+
+
+
+we use relative if we have a child to be absolute (take ref from parent and move accordingly)
+we use inline-block to change dimentions of a inline elemennt
+
+
+
+Relative means size depend on other like browser or parent size like
+
+% relative to parent element means if parent is 50px so its whatever % we declesr like 200% so 200% of its parent which is 50 ka 200%
+
+
+
+em relative to its size example parent is 16px so its child defint as for wxample 1.3em so it is 1.4 times its parent
+
+rem relative to font size of root it tqke referance from its root whichis html
+
+vw 1% width of viewpoint
+vh 1% height of voiewpoint
+vmin 1% width of viewpoint small dimention
+vmax large dimentio 
+
+
+
+the height depend on the content we are writhing html
+our child element always reside on parent
+like
+div
+p 
+ 
+ div
+
+
+position is of 4 type
+static which is default HTML 
+relative means relative to itseldf
+fixed to fix the element
+id position is relative then if
+top 30px it get push 30px push from top to down 
+right 30 means toward right 
+left toward left and
+bottom so it goes towrd up
+
+
+specificity 
+if we declear same property to an element then browser follow some rule thiw is specificity
+most is of inline css 
+then internal
+then external
+last apply css is most priority
+
+how to calculate
+
+Start at 0, add 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, add 1 for each element name or pseudo-element.
+
+style(inline element) > id > class, attribut(href,src),psudoclass(hover,visited) > psecudo element
+    1000               100               10                                             1
+
+
+
+
+
+
+inheritance in color property we use inheritance which means whatever property of its parent acquire by it
+Initial means its initial value depend on browser to browser
+
+
+exception is when we use "!important" keyword then it will become most priotrized
+
+
+
+
+we can use overflow if we want that our data h=which is overlowing will be prevented
+
+
+object-fit property used to fit that particular objr=ect
+
+uf wanna center element 
+if no width use text align : center
+if width use margin auto : 10 auto 10 auto
+more simple - classic
+make div inside section absolute, top  left = 50% and transform translate(-50,-50%)
+flex
+make parent section flex and 
+display flex 
+lign item and justift item to center
+
+more advance
+grid
+display grid
+place item center
+
+
+float is used to wrap on left or right and claer used to claer from left and right
+
+
+to add elements before an element or after an element we use ::before and :: after psucodo selectors
+
+
+
+
+so we have different typeof selectors
+
+1. *{
+     universal selector 
+    }
+
+2.  Element selector 
+
+h1{
+    select particular element 
+}
+
+3. Multiple element 
+
+h1,p,div {
+    slelect multiple elements 
+}
+
+4. class 
+
+.head{
+    head 
+}
+
+5. id 
+
+#name{
+
+}
+
+6. p.head {
+    p in class 
+}
+
+7. h1#name{
+    h1 in id 
+}
+
+8. .head>a {
+    all a inside class head
+}
+
+9. .head p {
+    head ke andar p ko 
+}
+
+10. .head+p{
+    target first p inside head class 
+}
+
+11. h1~p{
+    
+}
+
+
+Position 
+
+relative means uss element ke normal position se kitna uppar niche aage piche hoga
+absolute matbal uske parent ke relative
+sticky mins stick to top so when we scroll it will stick to the top
+fixed used to fix it on its position
+float property used to float element to top bottom left right 
+
+
+Before making website ask yourself questons like :- 
+       Individual
+1. Age of your end-user
+2.gender
+3. Placement- India, sanawad , america
+4. Do they live in urban or rular
+5.Type of end-user(Average income, background);
+6.Device they have 
+
+
+        Company
+1. Size of company 
+2.type of people of different background, income, position
+3. budget
+
+
+Create persona of your end user 
+
+Ask - why people will come to my website
+motivation behiend it 
+trigger - To learn Something, To play
+Goal behine it - Self growth
+
+Specify user problem and there solution
+
+like if someone wanna contact us ---> Lend to contact us page
+if someone wanna purchase something ---> Shop page
+make ux better
+ make a site map 
+
+ 

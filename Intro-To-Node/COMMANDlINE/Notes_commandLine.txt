@@ -1,0 +1,59 @@
+1. 
+
+Bash Shell
+
+It is like pasta or Walnut 
+
+If your OS is walnut the kernel(core- refers to the actual program that interface with hardware)  is a nut inside and 
+
+The outer shell is UI through which we interact
+
+ we have two types of interface:-
+
+1. Graphical user interface 
+
+2. command-line interface
+
+Bash - Bourne again shell - is a command-line interpreter - we find it on UNIX
+
+
+
+2. 
+our files are stored inside c->user->priya
+
+--list --> ls to look inside it
+--change directries - cd Documant/  --->Tab
+--to move in dir to dir we use cd 
+--to get data inside it we use ls 
+--use cd~ to get to root dir 
+--use cd .. to go backward
+
+3. Shortcuts 
+
+ctrl + a -- start
+ctrl + e -- end 
+ctrl and use mouse to move
+ctrl + u -- clear
+
+4. 
+--use cd to get to location 
+-- use pwd to get entire path
+--use touch name.txt ---- to create a file 
+--use start name.txt ----- to open 
+--use start -a vscode --- to open in vs code 
+--use rm --to remove
+--use rm -r --- to remove dir
+--use mkdir to create new directory
+5.  
+ we can use up key to see provious use commands
+
+6. Downlode external packages 
+
+in hyper write 
+npm install package_name---->enter
+and then import it using 
+require() method.
+
+7. Initlize npm by --. npm init
+
+

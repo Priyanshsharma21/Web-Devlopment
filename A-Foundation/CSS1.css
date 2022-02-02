@@ -1,0 +1,85 @@
+/* used to style and make our wibsite responsive */
+/* we use selectors to target particular element of html like single element (p,div,span), class(.clssname), id(#isname), p,div,header(multiple emenents) */
+/* selector{
+    element:value
+} */
+
+body{
+    background-color: azure;
+}
+header h1{
+text-align: center;
+color: rgb(2, 2, 2);
+}
+header nav{
+    text-align: center;
+
+}
+nav a{
+    font-size: medium;
+    font-weight: 100;
+}
+hr{
+
+border-style:  none;
+border-top-style: dotted;
+border-width: 5%;
+color: rgb(131, 131, 131);
+width: 23%;
+
+}
+section h1{
+    text-align: center;
+    /* text-decoration: underline rgb(54, 54, 54); */
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 0.7px;
+    /* border:  dotted indigo; */
+    text-shadow: 1px 1px 2px rgb(94, 76, 76);
+}
+
+a{
+    color: (internal value);
+text-decoration: underline;
+cursor: auto;
+}
+
+footer{
+    text-align: center;
+    margin: 0%;
+    padding:  0% 30% 2% 32%;
+    background-color: #8dff0aad;
+}
+
+table{
+    color: rgb(255, 255, 255);
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-position:bottom;
+    background-attachment: fixed;
+    width: 100px;
+    height: 100px;
+    text-transform: capitalize;
+    background: red url("img.jpg"), no-repeat, left;
+}
+p{
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(85, 82, 82);
+    text-indent: 2%;
+    letter-spacing: 2px;
+    font-family: PT Sans Narrow ;
+    word-spacing: 1em;
+
+    /* font: italic bold ; */
+}
+
+table,tr,th,td{
+    border-collapse: collapse;
+    border: 2px solid gray;
+    border-spacing: 6px;
+    padding: 10px;
+    margin: 0px;
+}
+}

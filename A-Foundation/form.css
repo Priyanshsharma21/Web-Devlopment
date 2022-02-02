@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 15px 30px;
+}
+
+.container{
+    background-color: rgb(218, 201, 201);
+    padding:5px 20px 15px 20px ;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+.pop{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(90, 99, 89);
+    border-radius: 10px;
+}
+fieldset{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(22, 20, 20);
+}
+
+.heading{
+    text-align: center;
+
+}
+
+.btns{
+    font-family: verdana;
+    font-weight: bold;
+    color: #161226 !important;
+    font-size: 15px;
+    text-shadow: 2px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #633856;
+    background: #FFFF00;
+    background: linear-gradient(to top, #FFFF00, #FF36D7);
+}
+
+.btns:hover{
+    color: #FFFFFF !important;
+    background: #00C1CF;
+    background: linear-gradient(to top, #00C1CF, #D1EE15);
+}
+
+.btnr{
+    font-family: verdana;
+    font-weight: bold;
+    color: #161226 !important;
+    font-size: 15px;
+    text-shadow: 2px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #633856;
+    background: #FFFF00;
+    background: linear-gradient(to top, #FFFF00, #FF36D7);
+}
+
+.btnr:hover{
+    color: #FFFFFF !important;
+    background: #00C1CF;
+    background: linear-gradient(to top, #00C1CF, #D1EE15);
+}
+
+.btni{
+    font-family: verdana;
+    font-weight: bold;
+    color: #161226 !important;
+    font-size: 15px;
+    text-shadow: 2px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #633856;
+    background: #FFFF00;
+    background: linear-gradient(to top, #FFFF00, #FF36D7);
+}
+
+.btni:hover{
+    color: #FFFFFF !important;
+    background: #00C1CF;
+    background: linear-gradient(to top, #00C1CF, #D1EE15);
+}
+
+
+input#eligible {
+    width: 80px;
+    padding: 10px 10px 10px 10px;
+    color: gray;
+    background-color: green;}
+
+

@@ -1,0 +1,69 @@
+flex box
+
+Make container flex and item inside are called flex items
+
+container property
+display: flex 
+flex direction - row, col , reverse 
+flex warp: warp nowarp 
+flex flow: row warp --- > shortend 
+justify content ---> center with gap between , start , end space around and b/w
+justify - main axis 
+align - cross axis  - align item - center end start streach, baseling 
+( according to text baseline)
+
+align content used to align flex line
+
+
+center the element to center - 
+align-item - center 
+justify-content -center
+
+difference b/w align item and content 
+align item align accorgind to items baseline and content align whole strictire
+
+
+
+
+
+
+
+
+flex item 
+
+order - order of items.
+flex-grow - grow item then other
+flex-shrink - shrink item than other
+flex-basis - initial length of item
+flex - 
+align-self
+
+
+
+
+
+
+
+
+
+
+
+
+
+ background-color: chartreuse;
+    width: 300px;
+    height: 280px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto 10px auto;
+    border: 4px solid black;
+
+cb
+
+/* width : width + (2*padding) + (2*border) = 300 + 20 + 8 = 328;
+height : height + (2*padding) + (2*border)*/= 280 + 20 + 8 = 308;
+
+
+
+bb 
+* width : width -(2*padding) - (2*border) = 300 - 20 - 8 = 272
+height : height - (2*padding) - (2*border)*/ = 280 - 20 - 8 =

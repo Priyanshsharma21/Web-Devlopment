@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: repeat(auto-fill, minmax(200px,4fr));
+            /* it means 1frmax and min 200px ke mixixmum kitna box aa sakte hai
+            /* grid-auto-rows: minmax(200px,auto); */
+            /* grid-auto-columns: minmax(200px,auto); */
+
+        }
+        .items{
+            background-color: darkorange;
+            border:2px solid darkorchid;
+        }
+        /* #item-3{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #item-4{
+           
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        
+        /* #item-5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+        }
+        .nested-item{
+            border: 2px solid yellow;
+            border-radius: 5px;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1-container" id="item-1">
+            <div class="nested-item" id="dd-1">dibba mai dibba-1</div>
+            <div class="nested-item" id="dd-2">dibba mai dibba-2</div>
+            <div class="nested-item" id="dd-3">dibba mai dibba-3</div>
+        </div>
+        <div class="items" id="item-2">items-2</div>
+        <div class="items" id="item-3">items-3</div>
+        <div class="items" id="item-4">items-4</div>
+        <div class="items" id="item-5">items-5</div>
+    </div>
+</body>
+</html>

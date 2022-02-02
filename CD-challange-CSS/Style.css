@@ -1,0 +1,318 @@
+/* uf wanna center element 
+if no width use text align
+if width use margin auto */
+
+ :root{
+     --hcolor: #11999E;
+ }
+/* this is global variable used saave time. to use it - var(use it) */
+
+body{
+text-align: center;
+}
+
+/* #logo{
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border: 2px dotted pink;
+    margin: 0 auto 0 auto;
+}
+
+.navbar a{
+    color: rgb(255, 0, 212);
+    padding: 20px;
+}
+
+.navbar a:hover{
+    color: rgb(0, 0, 0);
+    
+}
+
+.navbar a:visited{
+    color: rgb(30, 255, 0);
+
+}
+
+
+.navbar{
+    width: 303px;
+    height: 24px;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    float: right;
+} */
+
+.bottom-cloud{
+    position: absolute;
+    top: 58px;
+    left: 855px;
+}
+.top-cloud{
+    position: absolute;
+    bottom: 300px;
+    left: 227px;
+
+}
+
+.skills{
+    padding-top: 10px;
+}
+
+.mountain{
+    width: 537px;
+    height: 397px;
+    margin: 0 auto 0 -100px;
+
+}
+.Top-Container .topch{
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #66BFBF;
+    font-weight: normal;
+    line-height: 2;
+
+}
+.Top-Container .topchn{
+    margin: 50px auto 0 auto;
+    color: #66BFBF;
+    font-weight: normal;
+
+}
+.color{
+    background-color: #9dffe8;
+
+}
+
+.Top-Container{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 0px 0px 0px -145px;
+    padding-top: 56px;
+   
+}
+.middle-container{
+    
+}
+.bottom-container{
+ 
+}
+.pro{
+    text-decoration: underline;
+}
+.profile img {
+    width: 200px;
+    height: 200px;
+    box-shadow: rgb(255 30 0) -8px -8px 25px, rgb(255 251 2) 1px 3px 19px;
+    /* x,y,spread,color */
+}
+
+.profile h2{
+    transition: width 1s ease-in 0.2s;
+    /* property duraton transition-timing-function:  delay; */
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+}
+
+.skill-row .bullatin{
+width: 200px;
+height: 200px;
+padding-right: 30px;
+clip-path: circle(50% at 50% 50%);
+
+}
+
+.skill-row h3,.paragraph,.paragraph2{
+    text-align: left;
+    line-height: 2;
+    
+}
+
+.skill-row iframe, .bullatin{
+    width: 25%;
+    float: left;
+}
+
+.skill-row iframe{
+padding-right: 30px;
+}
+
+
+.skills h2 {
+    text-shadow:-15px -5px 10px #3a3333;
+    animation: piyu1 3s ease-in 2s 1 forwards;
+    /*            name  duration function delay last fill-mode */
+    }
+
+/* .paragraph{
+    clear: left;
+}
+
+.paragraph2{
+    clear: left;
+} */
+
+.middle-container h3{
+    color: var(--hcolor);
+}
+.bottom-container{
+    background-color: rgb(255, 217, 0);
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px auto 20px auto;
+    padding: 10px 10px 10px 10px;
+}
+.bottom-container a {
+    color: var(--hcolor);
+    margin: 30px auto 30px auto;
+    padding:10px 10px 10px 10px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.bottom-container p {
+   text-decoration: none;
+   word-spacing: 3px;
+   padding:3px;
+  
+}
+.contact-me .btn{
+    background: #00e1ff;
+    background-image: -webkit-linear-gradient(top, #00e1ff, #376a8a);
+    background-image: -moz-linear-gradient(top, #00e1ff, #376a8a);
+    background-image: -ms-linear-gradient(top, #00e1ff, #376a8a);
+    background-image: -o-linear-gradient(top, #00e1ff, #376a8a);
+    background-image: linear-gradient(to bottom, #00e1ff, #376a8a);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    text-shadow: 4px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 6px 17px 8px 17px;;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+    
+}
+
+.contact-me .btn:hover{
+    background: #ff00f7;
+    background-image: -webkit-linear-gradient(top, #ff00f7, #0099ff);
+    background-image: -moz-linear-gradient(top, #ff00f7, #0099ff);
+    background-image: -ms-linear-gradient(top, #ff00f7, #0099ff);
+    background-image: -o-linear-gradient(top, #ff00f7, #0099ff);
+    background-image: linear-gradient(to bottom, #ff00f7, #0099ff);
+    text-decoration: none;
+}
+
+.contact-me{
+    
+}
+
+.line{
+    border: dotted;
+    border-bottom: none;
+    color: lightblue;
+    width: 34%;
+    margin: 100px auto;;
+
+}
+
+.contact-me .mail a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fix{
+    padding: 10px auto;
+}
+/* .Top-Container p .pro{
+    font-size: 2.3rem;
+} */
+
+/* div.image>img{
+    width: 800px;
+    height: 600px;
+   align-items: center;
+   margin: 100px;
+   box-sizing: border-box;
+   border: 2px solid red;
+  padding: 9px 9px 9px 9px;
+} */
+
+/* default is static position 
+when we declear relative it can be moved relative to its posotion */
+
+/* .one{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+    position: relative;
+    top: 204px;
+
+
+}
+.two{
+    background-color: rgb(0, 255, 0);
+width: 200px;
+height: 200px;
+border: 2px solid gray;
+position: relative;
+left: 204px;
+}
+.three{
+    background-color: blue;
+width: 200px;
+height: 200px;
+border: 2px solid gray;
+position: relative;
+left: 408px;
+bottom: 204px
+} */
+
+/* note if we wanna change block to inline so we can do it by using display property
+if we want a sapn which is inline we can make it block and if we want para block we can make it inline 
+if we wanna change width of inline which is not possible normally
+we use inline block
+if we wanna disapper element we use visiblity hidden or display none
+*/
+
+@keyframes piyu1 {
+from{
+    width: 200px;
+}
+to{
+    width: 1188px;
+}
+}
+
+/* 
+@keyframes piyu1 {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+    top: 0px;
+    left: 0px;
+    }
+    50%{
+        top: 0px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+    } */

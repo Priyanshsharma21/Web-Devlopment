@@ -1,0 +1,18 @@
+2D layout technique used to layout complex layout in simple
+collection of hori and vertical lines in which we place our elements
+its width and height remainn same thats thy consistant
+
+parent container have child items grid items bolte hai apun log usko pyer se 
+
+parent - display grid kardo
+then   grid templete row column se usko arrange kardo with friction fr simple
+margin replace by grid gap = 10px like this
+aur aaram chayea lo - grid template column - repet(times,1fr)
+grid box acquire size according to element size cool but when we wqant to give dynamically size 
+
+row - width
+column - height 
+width height replace by - grid-auto-row, column like this 
+minmax use to give min max width and height 
+grid-auto-row - minmax(100px , auto ) min 100px rahegi maz jitne chayo utni
+grid-auto-column- minmax(100px , auto )

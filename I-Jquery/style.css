@@ -1,0 +1,9 @@
+body{
+    background-color: burlywood;
+}
+
+.heading {
+    color: rgb(100, 87, 87);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}

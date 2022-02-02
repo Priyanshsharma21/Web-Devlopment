@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- utf is a standard encoding covers all language symboles -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags used to display what to show in browser it helps brouser to show your informationn  that whats this site about to tell you -->
+    <title>Whole Html In One File</title>
+</head>
+<style>
+
+.myclass1{
+    border: 2px solid red;
+}
+#myid1{
+    border: 2px solid rgb(131, 1, 252);
+}
+#myid2{
+    border: 2px solid rgb(30, 255, 0);
+}
+li:nth-child(2n+0){
+    color: rgb(95, 95, 82);
+}
+
+
+</style>
+<body>
+
+    <!-- Heading -->
+    <h1>HEllo</h1>
+    <h2>HEllo</h2>
+    <h3>HEllo</h3>
+    <h4>HEllo</h4>
+    <h5>HEllo</h5>
+    <h6>HEllo</h6>
+
+    <pre>preformed text</pre>
+
+
+    <p>Lorem ipsum <em>Hello world</em> dolor sit <strong>Its me</strong> amet consectetur  adipisicing elit. Perspiciatis, eveniet.</p>
+<br>
+<hr>
+
+    <div>
+        Lorem ipsum <abbr title="Welcome to jungle">Hello</abbr> dolor sit amet consectetur adipisicing elit. Minima repellendus libero laudantium nemo iste tempora culpa,<acronym title="Hello">This is me</acronym> maiores iusto amet aperiam dignissimos odit architecto, possimus necessitatibus assumenda, itaque  exercitationem quis. Nulla!
+    </div>
+<br>
+    <address>Baheti colony street 4 sanawad</address>
+
+    <bdo dir="ltr">this is the heven</bdo>
+
+    <sub>Above the line</sub>
+    <del>deleted content</del>
+<hr>
+    <br>
+    <!-- href have url used to locate the given file  -->
+    <!-- two type absolure start se end thk ka path-> and relative -> target file thak ka path -->
+    <!-- direct file ka name likh do like hyperlink.html yea thir folder name / file name yea ../ to access outside of that folder -->
+
+    <a href="https://youtu.be/NcYYFE3IyLk" target="_blank">How To Change Your Identity</a>
+    <hr>
+    <a href="referancepage.html">Page2</a>
+    <img src="https://unsplash.com/photos/kLfkVa_4aXM" alt="Error Occure">
+    <video src="https://youtu.be/NcYYFE3IyLk" width="300px" controls>Priyansh sharma</video>
+<br>
+<hr>
+<h1>Iframe</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+<hr>
+<iframe src="https://www.coursera.org/learn/start-ux-design-process/supplement/tPei3/recruit-interview-participants" frameborder="2"> allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- now in this what we can do it / -->
+In ul we can style list by circle , squre , none
+<!-- in ol we can use list style = roman lower-alpha , upper-alpha also we can use url any image  -->
+ <!-- we can set position to inside(inside ul) or outside(outide of list ) -->
+<!-- shorthand -> list-style = inside circle                   -->
+
+
+    <ul>
+        <li>Bat</li>
+        <li>Ball</li>
+        <ul>
+            <li>kukaburra</li>
+            <li>SG</li>
+        </ul>
+    </ul>
+<hr>
+    <ol>
+        <li>Go to youtube.com</li>
+        <li>Search priyansh sharma</li>
+        <ul>
+            <li>
+                
+                <a href="https://youtu.be/NcYYFE3IyLk">how to change your Identity</a> <br>
+                <hr color="red">
+                
+                <a href="https://youtu.be/3c4yQ2KI3c4">vlog 11</a>
+                <video src="https://youtu.be/2QR11oDukn4" width="200px" controls loop muted poster="https://unsplash.com/photos/kLfkVa_4aXM">Html lacture 2</video>
+            </li>
+        </ul>
+        <li>Enjoy videos</li>
+    </ol>
+<hr>
+    <dl>
+        <dt>Java</dt><br>
+        <dd>java is a high level general purpose language which supports oops</dd>
+    </dl>
+<hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Priyansh</td>
+                <td>19</td>
+                <td>7999937157</td>
+            </tr>
+            <tr>
+                <td>Shreyansh</td>
+                <td>16</td>
+                <td>9826392951</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <th>420</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr><hr>
+
+    <!-- form -->
+    <!-- actions used for server
+         Name is used by server to identify the particular value is that a name of else, name,value this goes to server along with entered value
+         if we enter wrong value like add age in name so it will alert us
+         value type can be text,password,radio,number,date,email,checkbox,file -->
+         <!-- fieldset is usedto group and legent used to name the gropup -->
+
+         always use div to group block elements ad use span to group inline elements
+   <hr>
+   <div>
+       <h1>
+           Fill This Form
+       </h1>
+   </div>
+   
+         <form  action="mailto:piyuindia4@gmail.com" method="post" enctype="text/plain"> 
+        <div>
+            <label for="name">Name*</label>
+             <input type="text" , id="name" required>
+        </div>
+<br>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="Age of person" id="age">
+
+        </div>
+<br>
+        <div>
+            <label for="email">Email Adress</label>
+
+            <input type="email" name="" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Are You Elligable</label>
+            <input type="checkbox" name="" id="eligible">
+        </div>
+        <br>
+        <fieldset>
+            <legend>Color</legend>
+            <span>
+                <input type="color" name="color" id="color">
+                <p style="background-color: greenyellow;"><Strong >Select your favourait color</Strong></p>
+            </span>
+        </fieldset>
+<fieldset>
+    <legend>Gender</legend>
+        <div> 
+           Gender: Male <input type="radio" name="gender" id="male"> 
+           Female <input type="radio" name="gender" id="female">
+           Other <input type="radio" name="gender">
+           Not Willing to say <input type="radio" name="gender">
+        </div>
+    </fieldset>
+        <div>
+            <label for="textarea"></label><br>
+
+            Describe in words : <br>
+            <textarea name="TextArea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="file">Uplode File:</label>
+            <input type="file">
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Select car</label>
+            <select name="Car" id="car" multiple="multiple">
+                <option value="Bmw">BMW</option>
+                <option value="farari">Farari</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <input type="range" name="" id="range">
+        </div>
+<hr>
+<hr><br>
+<fieldset>
+    <legend>Enter Your password</legend>
+    <div>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password">
+    </div>
+</fieldset>
+<hr>
+        <div>
+            <!-- buttone are of three type submit and reset and image -->
+            <!-- <label for="reset">Reset:</label> -->
+            <input type="submit" name="Reset" id="reset">
+            <!-- <label for="Submit">Submit:</label> -->
+            <input type="Reset" name="" id="Submit">
+
+            <input type="image" name="" id="img">
+        </div>
+
+    </form>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+    <p style="border: 2px solid red;">This is Block Element take all space</p>
+    <span style="border: 2px solid rgb(38, 0, 255);">This is inline element take only given space</span>
+    
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<!-- id is used to uniquely Identity element , unique , cannot repeat -->
+<!-- class is used to group element (similar type of objects) , can repeat -->
+
+<!-- div.myclass$*4  -->
+
+
+<div class="myclass1">
+    <h1>class prop</h1>
+</div>
+<div class="myclass1">
+    <h1>class prop2</h1>
+</div>
+<div class="myclass1">
+    <h1>class prop3</h1>
+</div>
+<div class="myclass1">
+    <h1>class prop4</h1>
+</div>
+
+<div id="myid1">hello</div>
+<div id="myid2">hello</div>
+
+
+<hr><hr><hr>
+
+<!-- entities used for special char in copywrite -->
+
+<div class="container">
+    <p>this is       not print white space.</p>
+</div>
+
+<div class="container">
+    <p>this will &nbsp; &nbsp; white space.
+        also &dollar; and &jcirc;
+        my name is P&iacute;&yacute;&uacute;
+    </p>
+</div>
+
+<!-- now to understand code easily by browser and us we use simentic tags  -->
+<!-- article , section , summary ,aside, form, table, header , footer , navigation , figure , details
+     non sementic are div block element and span inline element -->
+
+
+<article>
+    <div>
+        <h1>How To Get Six Pack Abs</h1>
+        <p><strong>Things to eat</strong></p>
+        <ul>
+            <li>Protein</li>
+            <ul>
+                <li>
+                vegetarian sourse
+                <ul>
+                    <li>
+                        paneer
+                    </li>
+                    <li>
+                        soya chunks
+                    </li>
+                    <li>curd</li>
+                    <li>whey protein</li>
+                    <li>sprouts and pulses</li>
+                    <li>seeds and dry fruits</li>
+                </ul>
+                </li>
+            </ul>
+            <li>Complex carbs</li>
+            <ul>
+                <li>Oats</li>
+                <li>Roti</li>
+                <li>Brown Rice</li>
+            </ul>
+            <li>Healthy fats</li>
+            <ul>
+                <li>
+                    almonds,peanuts etc
+                </li>
+            </ul>
+        </ul>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

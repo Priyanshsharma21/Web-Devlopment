@@ -1,0 +1,15 @@
+{
+  "name": "za-paradice_fitness",
+  "version": "1.0.0",
+  "description": "This is my fitness website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyansh Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  }
+}

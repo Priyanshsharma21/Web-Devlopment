@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="i">
+   <feGaussianBlur stdDeviation="1.449025"/>
+  </filter>
+  <filter id="h">
+   <feGaussianBlur stdDeviation="0.775019"/>
+  </filter>
+  <linearGradient id="m" x1=".83711" x2=".072761" y1=".16814" y2=".78184">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="l" x1=".24193" x2=".57546" y1=".70945" y2=".35418">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="k" x1=".17949" x2="1.0544" y1=".85333">
+   <stop stop-color="#999" offset="0"/>
+   <stop stop-color="#f2f2f2" offset=".55469"/>
+   <stop stop-color="#b3b3b3" offset="1"/>
+  </linearGradient>
+  <linearGradient id="j" x1=".39676" x2=".66746" y1=".6238" y2=".38164">
+   <stop stop-color="#1c3e47" offset="0"/>
+   <stop stop-color="#88aeb9" offset=".42765"/>
+   <stop stop-color="#b9d0d6" offset=".5845"/>
+   <stop stop-color="#88aeb9" offset=".74486"/>
+   <stop stop-color="#2d5059" offset="1"/>
+  </linearGradient>
+  <radialGradient id="n" cx="123.17" cy="7.9658" r="77.5" gradientTransform="matrix(-1.5376 -2.6632 2.6658 -1.5391 315.77 494.99)" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-color="#fff" offset="1"/>
+  </radialGradient>
+ </defs>
+ <path d="m136.94 152.64l5.051 5.303 14.647-13.637-5.05-5.303-14.648 13.637z" fill="url(#k)" fill-rule="evenodd"/>
+ <path d="m90.81 12.83c-41.857 1.0616-75.5 35.388-75.5 77.5 0 42.78 34.72 77.5 77.5 77.5s77.5-34.72 77.5-77.5-34.72-77.5-77.5-77.5c-0.668 0-1.335-0.01686-2 0zm2 7.5c38.64 0 70 31.36 70 70s-31.36 70-70 70-70-31.36-70-70 31.36-70 70-70z" filter="url(#h)"/>
+ <path d="m90.81 12.83c-41.857 1.0616-75.5 35.388-75.5 77.5 0 42.78 34.72 77.5 77.5 77.5s77.5-34.72 77.5-77.5-34.72-77.5-77.5-77.5c-0.668 0-1.335-0.01686-2 0zm2 7.5c38.64 0 70 31.36 70 70s-31.36 70-70 70-70-31.36-70-70 31.36-70 70-70z" fill="url(#n)"/>
+ <path d="m114.76 26.555c-23.713-8.6356-63.729-4.1608-74.586 27.128 11.751 0.6981 28.368 12.213 40.276 16.549 37.776 13.756 66.885 17.84 74.678 49.677 0.51099-1.194 1.004-2.392 1.454-3.627 13.222-36.308-5.514-76.506-41.822-89.727z" fill="url(#m)"/>
+ <path d="m28.56 92.267c0.4789 15.446 6.5521 30.218 16.906 41.532l6.9375-7.438c-10.202-9.111-18.673-20.316-23.844-34.094zm25.125 35.219l-7 7.625c6.548 6.764 14.69 12.189 24.125 15.625 10.379 3.78 21.097 4.697 31.313 3.188-16.634-5.688-34.139-14.088-48.438-26.438z" fill="url(#l)" opacity=".7"/>
+ <path d="m90.941 17.88c-39.13 0.99246-70.58 33.082-70.58 72.45 0 39.992 32.457 72.449 72.45 72.449 39.992 0 72.449-32.457 72.449-72.449s-32.457-72.45-72.449-72.45c-0.625 0-1.249-0.015749-1.87 0zm1.87 7.0112c36.121 0 65.438 29.316 65.438 65.438s-29.317 65.438-65.438 65.438c-36.122 0-65.439-29.316-65.439-65.438s29.316-65.438 65.439-65.438z" filter="url(#i)" opacity=".2"/>
+ <path d="m138.56 160.55l79.459 87.944c8.334-3.283 19.863-15.029 23.903-22.605l-81.637-86.176-21.725 20.837z" fill="url(#j)" fill-rule="evenodd" stroke="#000" stroke-linejoin="bevel"/>
+</svg>

@@ -38,3 +38,8 @@ const moveLeft = () => {
 
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
+
+
+$(".calc-btn").mouseover(function(){
+$("h1").css("color","white");
+});

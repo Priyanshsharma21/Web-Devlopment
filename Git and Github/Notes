@@ -1,0 +1,168 @@
+Git used in many accept for a devloper 
+
+
+1. version Cntrol - sometimes we write code we save it as version1 in git and then more code name as version2 
+so whit help of git we can make savepints so whenever we want to go back we have a option of undo
+
+-> steps to version control - 
+-> create a dir in desktop and make a text file save it -> We are in our working dir
+-> initlize git by  -> git init 
+-> Now we have to store the file inside the dir into staging area  for this use git add
+ -> git add chapter.txt and now this file added into staging area 
+ -> use -> git status to check the status 
+ -> now commit it 
+-> git commit -m"first version" , this message helps us to identuify the savepoint
+
+ -> note if any problem unknown user types so use ->
+
+
+ $ git config --global user.email "piyuindia4@gmail.com"
+
+
+ so you can tell your terminal your identity
+  now after commit use 
+  -> git log to check the commit
+
+  Now create 2 new chapter and use git status to check the status of file wether the file in staging area or note
+  to add multiple files or we can say al tha file we use 
+  -> git add .
+
+  -> Now if you mistake -> you write new code and save it now you want previous one back or take ref from it  you can use -> git diff chapter3.txt
+  -> for complete rollback to pre version use git checkout file.txt
+
+
+  Steps ->
+  1. Create file in working dir and initlize git (git init). -> Working dir. Our file is untracked now
+  when we write something in it it is now modify.
+  2. Use $ git config --global user.email "piyuindia4@gmail.com" , to tell our identity --> All the changes are parmanent.
+  3. Now use, Git add to move this file from working dir to staging area and file started track
+  4. Commit change -> git commit -m"message" , now all changes save to local reprositry (Now till that version are saved)
+  5. when if we mistake , we use git checkout  to rollback
+  6. use git diff file.txt to chech new version and old version difference 
+  7. To completely rollback use -> git checkout
+  8.  git remote add origin 
+(https://github.com/Priyanshsharma21/Story.git) when we use this our master brance created (this line shows to store the files here)
+  9. Now use git push -u origin master to push the added file.
+  10. Use git add . to add all the file.
+  11. Use .gitignore file -> Write file name n it you dont wanna include it on github (Tracked file are not ignore).
+  Note-> To remove file which is tracked we use -> Git rm --cached 
+  12. git rm --cached -r . -> to remove all the files
+  13. When we want files from other person local repositry then we use -> git clone url
+  14. When we want file from peron remote repositry we use fork
+  15. Use git branch branch_name ,to create new branch other than master In new branch you can work on the project you want and when its
+  over you want that to merge that branch so we can merge it using -> git merge branch_name (this is done by master branch)
+
+
+2. Github-> 
+
+
+1. First after setup your github account can push out code into it using hyper
+2. Now to push our commit files into remote reprositry (github) we use command -> git remote add origin 
+(https://github.com/Priyanshsharma21/Story.git) (to paste right click)
+3. Now remote crrated and now we can push our code by ->git push -u origin master(is a default branch) u flag used to link local rep to github rep 
+
+4. Now your file uploded to github 
+5. you can check all commit in insights
+6. As you save it to github you will see the timetline of all commit and this is called master branch which is sequental
+
+7. Story dir is local rep and git story is our remote reprositry
+when we perform push all file from local push to remote
+
+
+
+3. Git Ignore
+
+1. Sometimes we want that some files to not to be display to all in github (file contain api keys and passwords)
+2. DS store is the file that we cant see but is present in our dir (use-> ls -a) ofor the same
+3. To create a sectet file which contain unsharable files we use git ignore
+4. Use -> (touch .gitignore or .filename)
+5. Now you cant see it but when use ls -a we can see it 
+6. (open .gitignore) to open
+7. Use git init -> git add . -> to add all files 
+8. Note -> Use (git rm --cached -r .) to remove all add files
+9. Inside the .gitignorefile -> write file you want to remove -> 
+9.1 .DS_Store , Secret.txt 
+9.2 Note -> Use -> # for comment -> use -> *.txt to remove all text file
+10. Now when you use the git add . you will see that files are removed
+11. Now when you push the file in github you will not uplode the sencetive files
+
+
+
+
+4. Git Clone
+
+1. Sometimes we want other person code to see his coding style or just want his/ her code we can clone it
+2. Go to his repositry
+3. Clone use to clone remote rep to local rep
+4. Go to github -> search "open source android app" and open other people project -> clone and copy its url
+5. Use (git clone url)
+6. Git clone use to sceleton any project
+
+
+
+5. Margin and Branching
+
+1. Imagin a scanario you commit your project inside master branch 
+2. Now you have a new idea and you want to implement it so you can create new branch and work on it
+3. Pallelly you can work on the master branch also and in futre you think that you want that version then you can mearge it in master
+4. In big project you work in multipal branch
+
+5. Create branch
+5.1 -> Inside our local rep -> git branch alian-plot -> type -> git branch to see all branch
+5.2 -> To go to new branch use git checkout branch_name
+5.3 -> Now whatever changes happen will be done inside the alian master and you will add and commit it
+5.4 Note -> Both the branches are unique and different it is like a thread that we create inside a process
+5.5 -> Now you like the branch then what you can do it mearge it
+5.6 -> Go to master branch and type (-> git merge alian-plot)
+Note -. use :q! to quit
+5.7 -> Now in master git remote add origin 
+(https://github.com/Priyanshsharma21/Story.git)
+5.8 -> git push origin master -> the 4 file mearge and inside network section you will see the new graph of commit
+
+6. You can do this process inside the github also
+6.1 -> create a rep -> check readme file -> create a new file and write come code -> create new branch  -> now when you change in your main branch you can commit in new branch 
+6.2 -> to merge the new version by  -> from initile branch (master)-> click new pull request
+6.3 -> Inside compare page choose base and experimental branch and create pull request -> Merge experimental branch to master. -> confirm
+
+
+
+6. Fork and collabration 
+
+1. Let I Posted an remote rep on github -> Let say my teammate zack she also wanna make changes to my rep add features 
+2. He/she can make copy of my rep on this github  -> this is called forking
+3. Now she have my repositry copy on this local dir and can make changes to it 
+4. Now she will add some changes and after that she will push it on her github (remote repositry).
+5. Now she will pull request and ask Me about to merge this code in our repositry
+6. If i found the req dont voilet my code then i accept request and merge it
+
+ex ->
+1.1 -> You wanna contribute to other code so what you will do:
+1.2 -> Went to his remote repositry > Fork > Same copy is now on your remote repositry
+1.3 -> Make changes and commit changes on branch (master)
+1.4 -> Now on your network it will show your commit graph 
+1.5 -> In orgainsation, It will show a new branch of all contributers
+1.6 -> Now you will click pull request and tell the orgainsation that my features are worthy as I have only read permision not R-W so    i      can  only suggest
+1.7 -> Now orgainsation see under pull request about your request and see why modificationn are necessary. 
+1.8 If he finds it helpful he will merge it and acknowlege you
+
+
+
+
+Chart ->
+
+  our           
+|working|                    files at                             files at my                       files at 
+|dir |  ----git add-----> |Staging area| -------git commit-----> |My Local Rep| ---Git Push----->|My Remote Rep|
+                                                                                                     /  |          \
+                                                                                                    /   |           |
+                                                                                  git clone       /     | Fork      pull req
+                                                                                                /       |            |
+                                                                                              /         |            |
+                                                                             Another person             |            |
+                                                                             local area --------------Other person remote area
+
+
+                                                                                      
+
+
+

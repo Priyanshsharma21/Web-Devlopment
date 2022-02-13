@@ -6,6 +6,12 @@ We use node js for this purpose to intrect with server
 
 1. Nodejs
 
+Node is a process to run js in backend
+It is  a programe , an runtime compiler, platform, runtime enviroment
+it have some library like http and all.
+also have npm in which library of all people kept we write npm install _____ and it get install
+when we write node app.js then node started reading the file one by one a =nd execurte it
+
 Server Sde language to communicate, indpendent of browser 
 
 To run node file that we created we use hyper terminal 
@@ -23,12 +29,13 @@ Inside hyper if we write Node - We enter into REPL and now we can write code dir
 
 
 4. To exit use 
-.exit and for clear to clear
+.exit and for clear to clr
 
 5. We cn use internal packages of nodejs documentation nd 
 6. If we wanna use exetrnal packages we can use npm - node package module
 
 go to npmjs.com and we get packages now in hyper we can install package in our dir
+It is a library
 
 7. In every project we have to create a server 
 steps to create server are :-

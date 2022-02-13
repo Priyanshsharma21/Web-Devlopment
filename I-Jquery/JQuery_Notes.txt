@@ -99,7 +99,7 @@ $("h1").html("<em>This will only change the text between</em>"); // slect h1
 Normal - document.querySelector("h1").getAttribute("href");
 jquery-$("h1").attr("src") //get attribute 
 
-Normal - document.querySelector("h1").getAttribute("href","http:/google.com");
+Normal - document.querySelector("h1").setAttribute("href","http:/google.com");
 jquery-$("h1").attr("src","http:/google.com") // set attribute
 
 

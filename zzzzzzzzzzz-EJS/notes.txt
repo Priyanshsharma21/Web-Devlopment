@@ -1,0 +1,26 @@
+ ?but for something like social media post we cant make multiple html for different posts 
+ ?so we use template such for different logic our html will change itself
+
+
+
+! res.send("Hello"); // use to send our html but once
+! res.write("NOw we can send multipe lines")
+
+
+
+TODO- Ejs is a tempate writing wich have the syntax of
+* <%= variable %>
+
+
+? We have created list ejs inside view folder such that
+when we write 
+app.use("view engine", "ejs"); // to use ejs
+?It will look inside the viwe folder for the ejs
+when we write 
+res.render("list", {key:value}); // it will look to list.ejs 
+
+
+
+    ! note -> <%= variable to be replaced %> 
+    ? This is the syntax of writing the ejs
+    *variable use in ejs and app.js must be same

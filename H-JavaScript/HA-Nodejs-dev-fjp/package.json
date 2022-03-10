@@ -9,6 +9,7 @@
   "author": "Priyansh sharma",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.0",
     "cric-live": "^1.0.19",
     "cricketstats": "^1.0.4",
     "crickrandom": "^1.3.3",

@@ -1,0 +1,65 @@
+!Deploy wab apps with database 
+
+Till new we been using it on 
+http://localhost:300    & // it is an browser protocol
+mongodb://localhost:27017 // this is a db protocole
+
+In order to deploy it we need a web server wjich connect to internet 24*7
+nd whenever we wantour data it serve us 
+
+But website with database is workstation not server
+
+So we need two server one for Hpst our website and other for our database 
+and solution is Mongodb Cloud server (Atlas)
+
+1. login to Atlas use AWS cloud
+2. In security Create User and Create IP
+3. Get your MongoShell connands and Enter password 
+4. Now you are connect with cloud insteed of mongod
+5. You have a cloud database 
+6. Now in order to create a database go to collections on cluster and create database
+7. Insert document and you can see that new database created
+8. In order to connect your app to cloud 
+1. Go to cluster-> connect-> connect app-> copy the url and paste on your app local host part 
+2. Now when you start your server on localhost:300 whatever you add some data in your app it reflect on out cloud database
+
+
+
+
+Deploy on heroku 
+
+1. Install heroku 
+2. Heroku login 
+3. Heroku create -> an new app created 
+4. Create Procfile -> web: node app.js
+5. Make local host listen on -> process.env.PORT || 3000 or
+paste line of code here 
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
+
+app.listen(port, function () {
+    console.log("Server has started successfully");
+});
+
+6. paste this 
+
+"engines": {
+    "node": "16.13.2"
+  },
+
+below packeage.json 
+
+7. Create a git ignore file and paste this 
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+
+8. git add . 
+9. git commot -m"message"
+10. git push heroku master 
+and boom our app released on www

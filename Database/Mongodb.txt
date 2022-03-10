@@ -1,0 +1,133 @@
+First thing first is to perform CRUD operations
+
+Steps -> Go to hyprer and type mongod (started at server i.e 20780)
+Open new tab in hyper and type-> mongo and we are ready to use mongo shell on hyper
+
+
+! 1. Create database
+
+?Use shopDb(name of db) -> shopDb created.
+
+?note->show dbs show all db on our system 
+to show dbs it must have something
+
+?db -> show us our current db
+
+! 2. Insert 
+
+db.collection.insertOne()
+db.collection.insertMany() // if no collection then it create one for us
+
+ex->
+collection is like table in sql 
+
+? db.users.insertOne(){
+?    key:value,
+?    key:value
+?}
+
+db.product.insertOne(
+    {
+        id:1,
+        name:"pen",
+        price:5.89
+    }
+)
+
+show collections -> product 
+db-> shopDb
+
+
+2. Read 
+db.collection.find() is use to find all data in database 
+
+ex-> db.product.find() -> all objects printed
+
+Specific query->
+
+db.collection.find({query}, {projection})
+
+
+Query-> {key:value}
+ use operatos for selecting specific objects
+
+-> db.product.find({name:pen}) -> return that data
+->db.product.find({price:{$gt : 6}}) -> price greater than 6 comes
+
+Projection-> {key :1-true,0:false}
+Use to project specific data in the object 
+
+-. db.product.find({price:{$gt:6} , {name:1}})
+
+
+3. Update 
+
+-> db.product.updateOne( {id:1}, {$set:{stocks:36}} )
+
+
+4. DELETE
+
+-> db.products.deleteOne({id:2})
+
+
+
+5. Relationships
+
+db.products.insertOne(
+    {
+        id:4,
+        name:"rubber",
+        price:5,
+        stocks:500,
+        reviews: [
+            {
+                name : "raju",
+                rating: 5,
+                review : "The best rubber in the solar system"
+            },
+
+            {
+                name : "Kaju",
+                rating: 5,
+                review : "Nice rubber"
+
+
+            }
+        ]
+
+  }
+)
+
+This is one to many relationship in the product document
+
+db.products.insertMany(
+    {
+    id:1,
+    name:"pen",
+    price:5
+    }
+
+    {
+        id:2,
+        name:"pen",
+        price:9
+    }
+
+    {
+        product_id:34345,
+        productOrder : [1,2]
+    }
+)
+
+product order contain both the order
+
+
+
+TODO   Now in order to combine MongoDb with our Nodejs we use -> Mongodb native driver and mangoose
+
+! 1. Mongo native driver
+! 2. Mongoose 
+Use mongoose docs inside the apis
+
+
+

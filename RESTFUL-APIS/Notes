@@ -1,0 +1,158 @@
+REST means 
+REpresental state transfer
+
+
+Our browser works on client server architecture
+Client request for data if server have it give (in form of html) otherwise 404 error
+Client request is HTTP request 
+HTTP is not only request we also have file transfer protocol
+HTTPS is secure request (encrepted) defecult to hack
+the responce we get depend on the request (It can ve fulfil by server or database)
+
+Building an api is like building a menu like what our server can responce
+REST is an architucture style to design the apis
+There are more architucture style like Sope graphql
+
+
+How to make your API restful
+
+1. Using HTTP verbs(language);
+2. Use specific pattern routs/endpoints
+
+
+1. HTTPS verbs
+
+Get 
+Post
+Put
+Patch
+Delete
+
+
+1. Get / Read 
+
+app.get("/",function(req,res){
+
+})
+
+It search and read the data from database
+
+2. Post / Create
+
+app.post('/',function(err,data){
+
+})
+
+It is like create database if created then success otherwise error
+
+3. Put or Patch  // Update
+Both goes to database and used to update
+
+app.put is like you are replacing entire entry of database
+When we buy from amazon and product is defect we can either replace the whole or 
+replace the defect part
+
+Put is like replace whole database
+Patch is like you are secding Request to Update the part of data
+
+
+4. Delete is deleting the database
+
+app.delete({
+
+})
+
+
+
+2. Use an specific pattern of endpoints(routes);
+
+www.wikepedia.com/article/justin-bieber
+
+
+
+
+
+
+
+Creating REST API
+
+Using database as ROBO-3T an Graphical Interface For our database
+After downode go to the connect and you will see all local databases 
+There is always command line is best for doung operations but sometimes we need a GUI for doning it with ease
+
+1. Create Database
+2. Create Collections(lowercase and pural)
+3. Insert Document and write your data here
+
+Steps to setup
+1. Create a dir (mkdir nameOfDir)
+2. npm init and npm i body-parser, Mongoose, express, ejs
+3. Create app.js
+4. Inside the app.js add sewrver code
+5. Mongodb setup
+5.1 Name of database , collection
+
+
+REST
+1. Get Method -> Inside the get method we have Article.find({},function(err,res)){
+
+}
+Now when we go to the localhost:3000/articles we will see all the data comes from our robo-3t
+
+2. Now post request , When any client what data from our server we send it in form of html css js, Post request is send via 
+
+app.post(function(req,res)){
+
+req.body.dataField1;
+req.body.dataField2;
+
+}
+
+In order to test the api go to post man and make a post request-> go to body and chnge the encoding -> Write the -> Title and content 
+when you click the send then you will resive it in post request
+
+now we can create a new article with it using 
+
+ const article1 = new Article({
+        title : req.body.title,
+        content : req.body.content
+    })
+
+    article1.save();
+
+
+and a new entey created inside the robo-3t
+
+
+
+3. Delete -> Delete documents
+
+app.delete("/route",fumction(req,res){
+    Article.deleteMany({condition},function(err){
+        if(!err){
+            res.send("item deleted)
+        }else{
+            res.send(err);
+        }
+    })
+})
+
+4. When we are working in the same route like "/article"
+Its better to use app.route to make chain of all get post delete put parse request
+
+// app.route('/articles').get().post().delete();
+
+// app.route('/articles')
+
+.get(function(req,res){
+
+})
+
+.post(function(req,res){
+
+})
+
+.delete(function(req,res){
+    
+});
+

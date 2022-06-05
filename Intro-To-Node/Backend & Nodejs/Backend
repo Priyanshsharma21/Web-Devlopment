@@ -12,7 +12,7 @@ it have some library like http and all.
 also have npm in which library of all people kept we write npm install _____ and it get install
 when we write node app.js then node started reading the file one by one and execurte it
 
-Server Sde language to communicate, indpendent of browser 
+Server Side language to communicate, indpendent of browser 
 
 To run node file that we created we use hyper terminal 
 In hyper terminat we have to reach to the file and write 

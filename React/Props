@@ -1,0 +1,66 @@
+
+When we have a repetative element in our JSX we use props
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Card(){
+  return <div>
+    <h2>Beyonce</h2>
+  <img
+    src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
+    alt="avatar_img"
+  />
+  <p>+123 456 789</p>
+  <p>b@beyonce.com</p>
+  </div>
+
+}
+
+ReactDOM.render(
+  <div>
+    <h1>My Contacts</h1>
+<Card />
+<Card />
+<Card />
+    
+
+  </div>,
+  document.getElementById("root")
+);
+
+
+
+Here I can change the value of the card dynamicly by props
+
+inside the html we have tags like 
+this tags have different attributes like name,value,placeholder,src 
+that we can access like this
+
+let input = document.getelementById("name")
+
+input.name -> Priyansh sharma 
+input.placeholder => "Hello"
+
+
+
+<input id="name" name="priyansh sharma" placeholder="Hello"></input>
+
+Similary in our react components we can use this type of custome attributes 
+
+<Card name="priyansh sharma" photo="http://wdwded3f" email="piyuindia4@gmail.com" />
+
+and where we declear it like 
+
+function Card(details){
+!here we can acces it 
+
+return <div>
+    <h1>{detaail.name}</h1>
+    <img {detaail.photo} />
+    <p>{detaail.email}</p>
+</div>
+}
+
+

@@ -1,0 +1,51 @@
+Hooks in react are used to manupulate a particular element of our UI
+Using state 
+Every component have some state 
+and on given conditions we can trigger different UI 
+SO with help of Hooks we can do the same
+
+let state = useState() --> return a array with value and function
+![value,function()]
+
+
+Destructuring 
+
+const [red,blue,green] = [9,27,245];
+
+Now red=9, blue=27, green=245
+
+
+
+
+
+
+
+
+!Example
+?I used useState hook in this
+
+import React,{useState} from "react";
+
+function App() {
+  const [count,isClicked] = useState(); // This Hook is an array have value and a function() // we extract value in count and function on isClicked 
+
+  function increase(){
+    return isClicked(count + 1);
+  }
+
+  function decrease(){
+    return isClicked(count - 1);
+  }
+
+
+
+  return (
+    <div className="container">
+      <h1>{count}</h1>
+      <button onClick={increase}>+</button>
+      <button onClick={decrease}>-</button>
+    </div>
+  )
+}
+
+export default App;

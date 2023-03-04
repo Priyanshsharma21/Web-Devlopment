@@ -1,0 +1,119 @@
+
+!Map -Create a new array by doing something with each item in an array.
+
+*Filter - Create a new array by keeping the items that return true.
+
+!Reduce - Accumulate a value by doing something to each item in an array.
+
+?Find - find the first item that matches from an array.
+
+TODO->FindIndex - find the index of the first item that matches.
+
+
+
+
+
+
+!1. Map -Create a new array by doing something with each item in an array.
+Ex-> 
+
+let numbers = [1,2,3,4,5,6]
+
+function double(x){
+    return 2*x;
+}
+
+numbers.map(double);
+
+?or 
+
+var newNumbers = numbers.map(function(x){
+    return x*2;
+})
+
+
+
+TODO inside an map function we pass another function which expect us to do something
+
+
+!1. WhatIf -> For each
+var numbers = []
+
+
+numbers.forEach(function(x){
+    numbers.push(2*x);
+}));
+
+
+
+
+
+!2. Filter
+
+let number = [3,4,5,6,44,34,32]
+
+create new array with all value that return true
+
+numbers.filter(function(num){
+    return num<10
+})
+
+
+!2. What if -> for each 
+
+var number = [];
+
+numbers.forEach(function(num){
+    if(num>10){
+        number.push(num);
+    }
+})
+
+
+!3. Reduce
+
+numbers.redude(function(accummulator,currentNumber){
+    return accummulator + currentNumber;
+})
+
+TODO -> accumulator is like a new variable = 0;
+
+!3. WhatIf -> Foreach 
+
+let numbers = [3,4,3,4,3];
+let sumnum = 0;
+
+numbers.forEach(function(num){
+    sumnum+=num
+})
+
+
+
+!4. Find -> Return when find wirst item 
+FindIndex -> Return index of first index found
+
+let numbers = [2,4,3,5,3];
+
+numbers.find(function(num){
+    return num >10
+})
+
+
+
+
+
+
+
+
+
+
+challange ->
+
+import EmojiPedia from './emojipedia';
+
+
+let value = EmojiPedia.map(function(message){
+  return message.meaning.substring(0,100) // cuts down the length
+})
+
+console.log(value)

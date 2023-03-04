@@ -1,4 +1,4 @@
-Git used in many accept for a devloper 
+<!-- Git used in many accept for a devloper  -->
 
 
 1. version Cntrol - sometimes we write code we save it as version1 in git and then more code name as version2 

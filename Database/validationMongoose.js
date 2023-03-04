@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/studentDB',{ useNewUrlParser: true });
 
 // In the schema we can deside the validation chaek 
-// This keep our data clean and stop wrong this value 
+// This keep our data clean and we prevent wrong value
 const emp_schema = new mongoose.Schema({
     Name : {
         type : String,

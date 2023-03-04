@@ -46,6 +46,20 @@ console.log(diff1);
     
 })
 
+fs.readFile(args.source, (err,data)=>{
+    if(err==null){
+        let date2 = Date.now(); 
+console.log("Finishing task1 at: "+ date2 % 100000);
+
+let diff1 = (date2-date1);
+console.log(diff1);
+    }
+
+    else{
+        console.log("Error happened");
+    }
+})
+
 // task2 (Calculate prime)
 
 let date3 = Date.now();

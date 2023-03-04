@@ -4,7 +4,7 @@ It is an programing used to perform CRUD operation on our data
 C-> create
 R-> Read  
 U->Update
-D ->Destroy
+D ->Destroy (delete)
 
 
 

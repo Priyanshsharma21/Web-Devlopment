@@ -54,8 +54,9 @@ const shreyansh = new Workout({
 })
 
 // workout.save(); // this is use to save only one docs to insert many, yes -> use insertMany
+let finalPeople = [workout,priyansh,shreyansh];
 
-Workout.insertMany([priyansh,shreyansh],function(err,workout){
+Workout.insertMany(finalPeople,function(err){
     if(err){
         console.log(err);
     }else{
@@ -70,7 +71,6 @@ Workout.find(function(err,workout){
     if(err){
         console.log(err);
     }else{
-
         mongoose.connection.close(); //Good to exit database
         workout.forEach(function(workout){
             console.log(workout.Workout_name);

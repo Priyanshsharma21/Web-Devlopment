@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
+const req = require('express/lib/request');
 const app = express();
 
 
@@ -43,7 +44,7 @@ const Article = mongoose.model("Article",wikiSchema);
 
 
 // ! All Get and Post request
-
+// TODO Routing chain
 // app.route('/articles').get().post().delete();
 
 app.route('/articles')
@@ -82,6 +83,62 @@ app.route('/articles')
             res.send(err);
         }
     })
+});
+
+
+
+// for specific route 
+
+app.route('/articles/:articleTitle')
+
+.get(function(req,res){
+    Article.findOne({title : req.params.articleTitle},function(err,foundArticle){
+        if(foundArticle){
+            res.send(foundArticle);
+        }else{
+            res.send("No matching article found..")
+        }
+    })
+})
+
+.put(function(req,res){
+    Article.replaceOne(
+        {title:req.params.articleTitle},
+        {title : req.body.title , content:req.body.content},
+        {overwrite:true},
+        function(err){
+            if(!err){
+                res.send("successfully updated");
+            }
+        }
+    )
+})
+
+.patch(function(req,res){
+    Article.replaceOne(
+        {title:req.params.articleTitle},
+        {$set : req.body},
+        function(err){
+            if(!err){
+                res.send("Successfully updated the article")
+            }else{
+                res.send(err);
+            }
+        }
+    )
+})
+
+.delete(function(req,res){
+    Article.deleteOne(
+        {title:req.params.articleTitle},
+        function(err){
+            if(!err){
+                res.send("Deleted Successfully");
+            }else{
+                res.send(err);
+            }
+        }
+    )
 });
 
 

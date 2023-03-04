@@ -108,7 +108,7 @@ req.body.dataField2;
 
 }
 
-In order to test the api go to post man and make a post request-> go to body and chnge the encoding -> Write the -> Title and content 
+In order to test the api go to postman and make a post request-> go to body and chnge the encoding -> Write the -> Title and content 
 when you click the send then you will resive it in post request
 
 now we can create a new article with it using 
@@ -140,9 +140,9 @@ app.delete("/route",fumction(req,res){
 4. When we are working in the same route like "/article"
 Its better to use app.route to make chain of all get post delete put parse request
 
-// app.route('/articles').get().post().delete();
+ app.route('/articles').get().post().delete();
 
-// app.route('/articles')
+ app.route('/articles')
 
 .get(function(req,res){
 
@@ -155,4 +155,84 @@ Its better to use app.route to make chain of all get post delete put parse reque
 .delete(function(req,res){
     
 });
+
+
+5. when we want a specific article then we can have another get req like this
+
+
+app.route('/articles/:articleTitle')
+
+.get(function(req,res){
+    Article.findOne({title : req.params.articleTitle},function(err,foundArticle){
+        if(foundArticle){
+            res.send(foundArticle);
+        }else{
+            res.send("No matching article found..")
+        }
+    })
+})
+
+so now whatever the request send after the article if it is equal to toitle the data will be return from there
+
+6. Put 
+
+this is used to overwrite whole document with new one
+
+app.put(function(req,res){
+    Article.update({condition},{update},{overwrite:true},callback)
+})
+
+.put(function(re1,res){
+    Article.update(
+        {title:req.params.articleTitle},
+        {title : req.body.title , content:req.body.content},
+        {overwrite:true},
+        function(err){
+            if(!err){
+                res.send("successfully updated");
+            }
+        }
+    )
+})
+
+when we go to postman and -> Put section inside the body change the title and content 
+and inside the localhose:3000/articles/justin%20bieber -> hit send then our data updated with the data we want
+
+Note if you provide only one field let say only content part then mongoose will replace the whole document and title=null
+
+
+7. Patch 
+In patch it replace the specific one only
+
+.patch(function(req,res){
+    Article.replaceOne(
+        {title:req.params.articleTitle},
+        {$set : req.body},
+        function(err){
+            if(!err){
+                res.send("Successfully updated the article")
+            }else{
+                res.send(err);
+            }
+        }
+    )
+})
+
+
+
+8. Delete
+
+.delete(function(req,res){
+    Article.deleteOne(
+        {title:req.params.articleTitle},
+        function(err){
+            if(!err){
+                res.send("Deleted Successfully");
+            }else{
+                res.send(err);
+            }
+        }
+    )
+});
+
 

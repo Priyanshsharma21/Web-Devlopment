@@ -5,3 +5,7 @@
     background-color:rgb(145, 255, 0) ;
     padding: 10px;
 }
+
+@media screen and (max-width:200px){
+    
+}

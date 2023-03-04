@@ -1,0 +1,5 @@
+Like our browser dev tool we have reacr dev tool extention which shows react component herarcy 
+Inside the devloper option we see component option and this is where we can see our devloper tools
+we can see the source code or the component too
+
+Note Whenever you are using a element number of times like <p></p> or other tag make a component of it

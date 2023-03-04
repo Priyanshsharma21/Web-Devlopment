@@ -1,0 +1,112 @@
+React components are used to add functionality to our JSX (Html)
+It mke our code reuseable 
+We can create function Of the element and can use its name tag inside the JSX 
+
+Note -> Use pascle case means(First Leter Capital)
+This helps to differentiate between the html tags and react components
+
+
+code -----------------------------
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Head(){
+  return  <h1>My Favourite Foods</h1>;
+}
+
+
+ReactDOM.render(
+  <div>
+   <Head></Head> // when we dont have text between tage use selfClosing tags 
+   <Head />
+    <ul>
+      <li>Bacon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+
+
+Now it is a good practice to make a jsx file and place all the components in it 
+So Make a jsx file and place our component there 
+
+Heading.jsx -> -------------------code-------------
+import React from "react"; 
+! Cause it is a jsx file we have to import react module in it 
+!also we have to export this component
+
+
+function Head(){
+  return  <h1>My Favourite Foods</h1>;
+}
+
+exports default Head;
+
+
+And inside the app.js import it 
+
+import Head from "./head"
+
+Note -> Both app.js and component.jsx must be in same folder
+
+Our Default Structore will be ---------------------->
+1. Index.js
+2. App.jsx 
+3. All component jsx file 
+
+!component one 
+
+import React from 'react';
+
+function Head(){
+  return  <h1>My Favourite Foods</h1>;
+}
+
+export default Head;
+
+!component 2
+
+import React from 'react';
+
+function List(){
+  return  <ul>
+  <li>Bacon</li>
+  <li>Jamon</li>
+  <li>Noodles</li>
+</ul>;
+}
+
+export default List;
+
+
+? App.jsx 
+
+import React from 'react';
+import Head from "./components.jsx";
+import List from "./list";
+
+
+function App(){
+  return <div>
+    <Head />
+    <List />
+  </div>
+}
+
+
+export default App;
+
+And our index.js 
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+
+This makes our code clean
+

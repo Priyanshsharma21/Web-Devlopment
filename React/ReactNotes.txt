@@ -13,3 +13,28 @@ It compare the old version of DOM with the new Version of DOM and spot the diffe
 such that it make change in that specific componet.
 
 We will use sandbox for React
+
+Inside the JSX we have to put closing tag for every html tag or use 
+<img src />  ->  / indicate self closing
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const randomImg = "https://picsum.photos/200";
+
+ReactDOM.render(
+
+  <div>
+    <h1 className="heading">My food</h1>
+    <div>
+
+      <img src= {randomImg + "?grayscale"} />
+
+    
+    </div>
+
+  </div>
+
+,document.getElementById("root")
+)

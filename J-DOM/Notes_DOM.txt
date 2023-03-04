@@ -19,6 +19,8 @@ It turns out HTML code into a tree like structure
 2. we style it (Document).
 3. JS add functionality to our document 
 
+! " DOM is platform to manipulate contant, structure and style dynamically "
+
 Document - HTML 
 OBJECT - HTML Elements (h1,div,p).
 Model - this whole model
@@ -53,8 +55,8 @@ document.queryselector('we can select objects').onClick; ---> methods
 2 ----->
 
 objectds inside DOM has 
- State - properties ---> describe about object 
- Behaviour - methods -----> What object can do
+ State - properties ---> describe about object -- we can get and set -> Change the innerHTML of a tag 
+ Behaviour - methods -----> What object can do -- we can create or delete -> Onclick some event occure
  
  car
 
@@ -136,13 +138,6 @@ document.quearySelector("li a").style.color="pink";
 note if you want all the e;ement then use
 
 document.quearySelectorAll("li a")[1].style.color="pink"; // now array selecor
-
-
-
-
-
-
-
 
 
 
@@ -271,7 +266,8 @@ function calculator(a,b,op) {
 }
 
 
-calculator(3,5,multpliy);
+result = calculator(3,5,multpliy);
+console.log(result)
 
 
 --------------add audio-----------

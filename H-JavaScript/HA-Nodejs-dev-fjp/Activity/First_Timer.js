@@ -13,5 +13,4 @@ let cid = setInterval(() => {
         clearInterval(cid);
     }
 
-
-}, time);
+}, 1000);

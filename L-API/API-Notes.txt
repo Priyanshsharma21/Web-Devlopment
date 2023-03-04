@@ -12,7 +12,7 @@ Endpoint, Path, Parameters,Authentication
 Endpoint - The url to access there data 
 
 path - url/path that the website already have specified
-Example- url/Programming,Movies(We seprate path by commas,)
+Example- url/Programming,Movies(We seprate path by commas)
 
 parameter - url/path/parameter(?key=value & contain=deebuging)
 Example- url/Programming/?type=single&contain=Debugging ,

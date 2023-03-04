@@ -1,0 +1,50 @@
+We are using the import and export from so long so how it works let see 
+
+When in any file you write export i.e 
+
+Math.js ->
+
+PI = 3.1456
+
+export default PI ;
+
+
+So now in app.js we can import it 
+import pi from "./Math"
+
+
+
+Now we have multiple exports then what to do 
+
+Math.js ->
+
+Pi = 3.153
+
+function doublePi(){
+    return Pi*2
+}
+
+function triplePi(){
+    return Pi*3
+}
+
+export default Pi
+export {doublePi,triplePi};
+
+
+
+app.js --->
+
+import pi,{doublePi,triplePi} from "./Math.js"
+import * as pi from "./math.js"
+
+<div>
+<h1>{pi} {doublePi()} {pi.triplePi()}</h1>
+</div>
+
+
+And now pi is a object contain all the things inside the math.js 
+we can use all the functions and variables using 
+pi.doublePi()
+
+

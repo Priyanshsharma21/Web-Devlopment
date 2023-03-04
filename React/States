@@ -1,0 +1,15 @@
+Declerative property
+
+UI = f(states)
+State changes UI also Changes
+
+
+Ex->
+
+IsTick = false (State)
+
+strickThrough = {textDecoration : lineThrough }
+
+reactdom.render( return <h1>{IsTick ? strickThrough : null}Workout</h1>)
+----------------------------------------------------------------------------
+If your IsTickis true then like throught in UI otherwise no line through

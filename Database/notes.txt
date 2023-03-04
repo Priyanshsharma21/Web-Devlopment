@@ -1,0 +1,55 @@
+?                 Databases
+-> In order to store out data we need a Databases
+-> Two type SQL(Sequal query lang) and noSqul(not only Squl)
+-> Most popular is SQl, MySQL, MONGODB
+
+TODO-> SQL, databases are the databases in which data store are related data 
+TODO ,all the data are stored in form of relation or table.
+TODO ,Databases-> Collection of relted data
+TODO, DBMS -> AN software used to manupulate that data like SQL 
+TODO-> Adv is it is good at maintain relationship
+TODO-> Dis-> In SQL databases when we dont place any value to the tabe it place null in front of it 
+TODO-> In sql we can create an seprate table for product customer and link it 
+TODO->it protect data redunancy, This is how we can join two tables 
+TODO-> Best use when we have to store data in table hving relation with each other 
+TODO-> When we scale the data as millions trillions bits of data is been generated then this is an issue in sql
+TODO-> It is like placing an floor above floor until you reach the sky
+
+*-> In Mongo -> Data stored in form of key value pair means json format
+*,so if you have extra data its not a problem in it,
+*,It dosent follow a strict structure
+*-> Not strict but bad at relationship
+*-> We can maintain relations in mongo too but it is little clumsy
+*-> Best when we have unstructured data like videos audios images
+*-> Scability is not an issue it this database bacause it is like you are scaling an colony
+
+
+
+! pros and cons ->
+
+?1. -> SQL is more mature and old
+TODO-> Mongo is new
+
+?2. ->SQL Table structure but 
+TODO ->mongo is document structiore 
+
+?3 ->SQL requre a schema(Proper structure) before Storing data
+TODO-> MONGO is more flexible to change
+
+?4 ->SQL is great when there are lots of relationships
+TODO-> MONGo is not good at relational data
+
+?5-> SQL scale vertically
+TODO-> MOngo scale horizontally
+
+
+
+
+
+
+
+
+
+
+
+

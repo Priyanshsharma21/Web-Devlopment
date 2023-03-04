@@ -1,0 +1,83 @@
+SQL -> Also called Sequal structure language
+It is an programing used to perform CRUD operation on our data 
+
+C-> create
+R-> Read  
+U->Update
+D ->Destroy (delete)
+
+
+
+1. Create 
+
+Create Table Person(
+    item1 datatype;
+    item2 datatype;
+    item3 datatype;
+)
+
+we set a item as peimary key such that to uniquly identify the tuples
+
+ex- > 
+
+CREATE TABLE product
+(
+id  INT NOT NULL,
+name STRING,
+price MONEY,
+PRIMARY KEY(id)
+
+)
+
+This create an empty table name product
+
+an table with 3 items id(primary key -> not null)
+name and money created
+
+
+2. Insert data in table 
+
+INSERT INTO product
+VALUE(1,"Pen",5.0);
+
+
+3. SELECT ->
+
+Select Column (name)
+FROM table name (product) 
+WHERE specificity(name="priyansh");
+
+
+4. Update 
+
+UPDATE table(product)
+SET column(name) = value("paper");
+WHERE condition
+
+example -> 
+UPDATE product
+SET price=260
+WHERE name="Book"
+
+5. DELETE
+
+DELETE FROM product WHERE manufacture='2002-01-04'
+
+6. ALTER
+1.ADD column 
+ALTER TABLE product ADD adress varchar(30);
+
+
+
+&. relationship
+We have different types of keys 
+1. Primary key to uniquely identify the tuples
+2. Forign key are the attributes that refer to the primary key of same or different table(it link two table)
+
+9. Join -> Used to manupulate two or more tables
+Inner Join -> Used to join Matching values of two table
+example->
+SELECT orderr.product_id,product.name, product.price, product.manufacturedate
+FROM orderr
+INNER JOIN product
+ON orderr.product_id = product.id;

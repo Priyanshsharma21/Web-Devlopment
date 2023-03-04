@@ -7,6 +7,9 @@ body{
     font-size: 20px;
     padding: 10px;
     margin: 15px 30px;
+    color: rgb(0, green, blue);
+    color: #00C1CF;
+    list-style-type:decimal;
 }
 
 .container{
@@ -97,6 +100,12 @@ input#eligible {
     width: 80px;
     padding: 10px 10px 10px 10px;
     color: gray;
-    background-color: green;}
+    background-color: green;
+}
 
 
+p{
+    background-color: red;
+    opacity: 0.9;
+    background-image: url(./);
+}

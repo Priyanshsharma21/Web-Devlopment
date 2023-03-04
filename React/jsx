@@ -1,0 +1,57 @@
+
+1. JSX
+
+First we have a html css and js file all we will do is inside the js file
+1. Downlode the dependencied -> react and react-DOM
+2. Require it 
+3. ReadtDom.render(what to show, whare to show)
+4. Using JSX we can write Plain HTML inside the JS file. Behind the seane It is picked by compiler and html compiled into js
+
+ReactDOM.render(<h1>Hello</h1>,document.getElementById("root"));
+
+Bable is next Generation js compiler , it take js and compile it to format understand by every browser
+So insteed of writing lot of code we can do that work in less
+This follow morden javascript syntexes like
+
+insteed of const ps = require('ps')
+we can do
+
+import react from "react";
+ReactDom.render(
+<div>
+  <h1>Hello Janeman</h1>
+  <p>This is react</p>
+</div>,
+document.getElementById("root")
+
+);
+
+render method can take only one html element so we have to put all html inside the one div
+
+2. JSX also allows us to write Html inside the js and js inside the HTML
+To insert js we use {} -> We can only write expression(which result a value) not statemants(Which computes to a value)
+
+
+
+import React from "react";
+import ReactDom from "react-dom";
+
+let name = "Priyansh";
+let lname = "Sharma";
+let num = 10;
+
+ReactDom.render(
+  <div>
+    <h1>Hello {name} {lname}</h1>
+    <h1>Hello {name + " " + lname}</h1>
+    <h1>Hello {`${name} ${lname}`}</h1>
+    <h4>lucky Number is {Math.floor(Math.random()*10)}</h4>
+    <h1>My Faviout Workout</h1>
+    <ul>
+      <li>Squads</li>
+      <li>Deadlift</li>
+      <li>Incline Dumbell Press</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);

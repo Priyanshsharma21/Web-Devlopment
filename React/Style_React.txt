@@ -1,0 +1,80 @@
+1.In react if we give style to the html element by givind ut class then it works but it give error because 
+JS file take it as a js property "className"
+So insteed of class use className
+
+
+ReactDom.render(
+<div>
+    <h1 className="Head">Hello {name} welcome to {year} </h1>
+</div>
+,
+document.getElementById("root")
+);
+
+
+2. In html we give script tage contain src and type=text/javascript cange it to JSX file
+3. When you are adding attributes in our JSX file use camelcase style of js because it is not a html it is a JSX
+4. Inline style -> When we write inlinr style JSX takes it as an object (key:value) so we have to write it in that form
+4.1 -> inside the JSX we can write it Js inside the { }
+4.2 -> And javascript object are like this {key:value} so combine becomes.
+
+<h1 style={{color:red}} 
+
+4.3 -> But why inline style this is because we can create a object of a style and use it there nsteed of style like this
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+let customeStyle = {
+  color :"Red",
+  textAlign : "center",
+  border : "2px solid yellow",
+  backgroundColor : "black"
+}
+
+ReactDOM.render(
+<h1 style={customeStyle}>Namaste Dunia!</h1>
+, document.getElementById("root")
+);
+
+
+
+5. Challange ->
+
+import React from "react";
+import ReactDom from "react-dom";
+
+let today = new Date();
+let time = today.getHours();
+let name = "Priyansh";
+let message = "";
+
+let customeStyle = {
+  color: "black",
+  backgroundColor: "pink",
+  border: "2px solid black",
+  textAlign: "center",
+  radius: "20px",
+  textDecoration: "red"
+};
+
+if (time >= 1 && time <= 12) {
+  message = "Good Morning";
+  customeStyle.color = "red";
+} else if (time > 12 && time <= 18) {
+  message = "Good Afternoon";
+  customeStyle.color = "green";
+} else {
+  message = "Good Night";
+  customeStyle.color = "blue";
+}
+
+ReactDom.render(
+  <div>
+    <h1 className="heading" style={customeStyle}>
+      {message} {name}
+    </h1>
+  </div>,
+
+  document.getElementById("root")
+);

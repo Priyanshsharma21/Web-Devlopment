@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DEMO</title>
+    <style>
+        .cont-me {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: rgb(193, 193, 193);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.4rem;
+        }
+
+        .navbar .head,
+        .list {
+            font-size: 1.4rem;
+            color: rgb(135, 135, 135);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        .list_element {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .li3 {
+            margin-right: 10px;
+        }
+
+        .head {
+            display: inline;
+        }
+
+        .head h1 {
+            font-size: 1.4rem;
+        }
+
+        .header {
+            background-color: blueviolet;
+        }
+
+        .contaioner {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+
+        #animate {
+            background-color: greenyellow;
+            width: 100px;
+            height: 80px;
+            border-radius: 10px;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid cont-me">
+        <span class="head">
+            <h1 class="h1babu"> Priyansh Sharma</h1>
+        </span>
+        <nav class="navbar">
+            <div class="list">
+                <ul class="list_element" style="list-style-type: none;">
+                    <a href="">
+                        <li class="li1 li-me">Home</li>
+                    </a>
+                    <a href="">
+                        <li class="li2 li-me">Contact</li>
+                    </a>
+                    <a href="">
+                        <li class="li3 li-me">About</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="img">
+                <img width="100px" height="100px"
+                    src="../ZA-Paradice_Fitness/image/mediterranean-cuisine-2378758_1920.jpg" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <div class="contaioner"><div id="animate"></div></div>
+    <p><button onclick="myMove()">click me</button></p>
+
+
+    <div class="evebt">
+        <h1 class="bhai" onclick="changeText(this)">Hello Its priyansh sharma</h1>
+    </div>
+
+    <h1>Enter your name <input type="text" onchange="upperCase()" name="Name" id="fullName"></h1>
+
+<h1 onmouseover="mouseOver(this)" onmouseout="mousedown(this)" class="Name">Hello It's</h1>
+
+<button class="clickMeBaby">Click ME</button>
+<p id="changes"></p>
+
+
+<!-- append child  -->
+
+<div id="parogi">
+    <p id="id01">Hello Guys this is priyash sharma</p>
+    <p id="id02">Nice to meet you</p>
+</div>
+
+
+    <script>
+        document.querySelector("li.li1").innerHTML = "Shreyansh sharma"; // inner html 
+        document.querySelector(".img img").setAttribute("src", "../sqwsqs")
+        document.querySelector(".cont-me").classList.add("header")
+        let dote = document.querySelector(".li2");
+        dote.style.color = "red";
+
+        let para = document.createElement('h1');
+        let node = document.createTextNode("This is a new Day, Lets rock baby")
+        para.appendChild(node);
+
+        let div = document.getElementById("parogi");
+        let child = document.getElementById("id01");
+        div.appendChild(para);
+        div.insertBefore(para,child)
+
+        // remove child or element 
+        let p1 = document.getElementById("id01");
+        let p2 = document.getElementById("id02");
+        div.removeChild(p2)
+
+        function myMove() {
+            let id = null;
+            const elem = document.getElementById("animate");
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 5);
+
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+
+        function mouseOver(id){
+            id.innerHTML = "Priyansh sharma";
+        }
+        function mousedown(id){
+            id.innerHTML = "Nice to meet you";
+        }
+
+        document.querySelector(".clickMeBaby").addEventListener("click",function changeColor(){
+            document.getElementById("changes").innerHTML = "Stranger Things";
+            document.getElementById("changes").style.color = "red";
+
+        })
+
+        function upperCase(){
+            let x = document.getElementById("fullName");
+            x.value = x.value.toUpperCase()
+        }
+
+        const data = new Date();
+        time = date.getTime()
+    
+
+        function changeText(id){
+            id.style.color = 'red';
+            id.innerHTML = time;
+        }
+    </script>
+</body>
+
+</html>

@@ -61,6 +61,7 @@ table{
     width: 100px;
     height: 100px;
     text-transform: capitalize;
+
     background: red url("img.jpg"), no-repeat, left;
 }
 p{
@@ -71,7 +72,6 @@ p{
     letter-spacing: 2px;
     font-family: PT Sans Narrow ;
     word-spacing: 1em;
-
     /* font: italic bold ; */
 }
 
@@ -81,5 +81,4 @@ table,tr,th,td{
     border-spacing: 6px;
     padding: 10px;
     margin: 0px;
-}
 }

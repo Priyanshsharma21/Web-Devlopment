@@ -1,0 +1,40 @@
+What is React 
+It is an Javascript Library to build Beautiful User Interface
+
+We can break Complex Structure Into Simple Tree Component
+
+Using React We can keep our Code simple and Reuse components(In HTML we have to write lot of code in order to make a navbar) But in REACT we can create our own customize tage and use it
+
+React Combines HTML,CSS,JS together to make a component.
+
+Every Component is indvidual in this language.
+
+It compare the old version of DOM with the new Version of DOM and spot the difference 
+such that it make change in that specific componet.
+
+We will use sandbox for React
+
+Inside the JSX we have to put closing tag for every html tag or use 
+<img src />  ->  / indicate self closing
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const randomImg = "https://picsum.photos/200";
+
+ReactDOM.render(
+
+  <div>
+    <h1 className="heading">My food</h1>
+    <div>
+
+      <img src= {randomImg + "?grayscale"} />
+
+    
+    </div>
+
+  </div>
+
+,document.getElementById("root")
+)

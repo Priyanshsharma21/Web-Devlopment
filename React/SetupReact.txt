@@ -1,0 +1,13 @@
+1. Have a latest version of node 
+2. Have a editor -> VSCode and downlode the extension Sublime babel
+3. Do to react docs and do following steps
+3.1-> Go to hyper terminal and "npx create-react-app my-app" to create new react app 
+an dir created name my-app inside that dir write npm start
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+Note -> Make sure your vscode is close during this process
+Now In Hyper go to npm start 
+And your react app start at port 3000

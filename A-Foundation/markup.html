@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta tags used to display what to show in browser it helps brouser to show your informationn  that whats this site about to tell you -->
     <title>Whole Html In One File</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> // ot add favicon
 </head>
 <style>
 
@@ -28,7 +29,7 @@ li:nth-child(2n+0){
 <body>
 
     <!-- Heading -->
-    <h1>HEllo</h1>
+    <h1 id="hello">HEllo</h1>
     <h2>HEllo</h2>
     <h3>HEllo</h3>
     <h4>HEllo</h4>
@@ -58,7 +59,12 @@ li:nth-child(2n+0){
     <!-- two type absolure start se end thk ka path-> and relative -> target file thak ka path -->
     <!-- direct file ka name likh do like hyperlink.html yea thir folder name / file name yea ../ to access outside of that folder -->
 
-    <a href="https://youtu.be/NcYYFE3IyLk" target="_blank">How To Change Your Identity</a>
+    title used to provide extra info to our website for SEO
+    we have absolute and relative paths
+    Absolute means -> Other domain Name
+    Relative Means -> Our own website or HTML of path
+
+    <a href="https://youtu.be/NcYYFE3IyLk" title="This is my youtube channel" target="_blank">How To Change Your Identity</a>
     <hr>
     <a href="referancepage.html">Page2</a>
     <img src="https://unsplash.com/photos/kLfkVa_4aXM" alt="Error Occure">
@@ -70,6 +76,25 @@ li:nth-child(2n+0){
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <hr>
+
+
+Use to map on image 
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+on different screen size different image will be shown
+<picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg">
+  </picture>
+
 <hr>
 <iframe src="https://www.coursera.org/learn/start-ux-design-process/supplement/tPei3/recruit-interview-participants" frameborder="2"> allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- now in this what we can do it / -->
@@ -79,7 +104,7 @@ In ul we can style list by circle , squre , none
 <!-- shorthand -> list-style = inside circle                   -->
 
 
-    <ul>
+    <ul >
         <li>Bat</li>
         <li>Ball</li>
         <ul>
@@ -88,16 +113,16 @@ In ul we can style list by circle , squre , none
         </ul>
     </ul>
 <hr>
-    <ol>
+    <ol type="I">
         <li>Go to youtube.com</li>
         <li>Search priyansh sharma</li>
-        <ul>
+        <ul style="list-style-type:disc ;" >
             <li>
                 
                 <a href="https://youtu.be/NcYYFE3IyLk">how to change your Identity</a> <br>
                 <hr color="red">
                 
-                <a href="https://youtu.be/3c4yQ2KI3c4">vlog 11</a>
+                <a href="#hello">vlog 11</a>
                 <video src="https://youtu.be/2QR11oDukn4" width="200px" controls loop muted poster="https://unsplash.com/photos/kLfkVa_4aXM">Html lacture 2</video>
             </li>
         </ul>
@@ -139,6 +164,16 @@ In ul we can style list by circle , squre , none
 
     <hr><hr>
 
+    <code>
+        // for adding code to website 
+       x = 10;
+       y=20;
+        z =  x + y;
+
+        <kbd>ctrl + c</kbd> for copy 
+        <samp>output- 30</samp>
+    </code>
+
     <!-- form -->
     <!-- actions used for server
          Name is used by server to identify the particular value is that a name of else, name,value this goes to server along with entered value
@@ -148,7 +183,7 @@ In ul we can style list by circle , squre , none
 
          always use div to group block elements ad use span to group inline elements
    <hr>
-   <div>
+   <div id="Me">
        <h1>
            Fill This Form
        </h1>
